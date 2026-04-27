@@ -3,140 +3,398 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Charleston Bachelorette Party Ideas | Fling Before The Ring</title>
-  <meta name="description" content="Plan a Charleston bachelorette party with brunch, beach time, rooftop cocktails, live music, and nightlife tips from Fling Before The Ring.">
+  <title>Charleston Bachelorette Party Ideas | Fling Before The Ring in the Holy City</title>
+  <meta name="description" content="The best Charleston bachelorette party ideas for 2025 – King Street shopping, Shem Creek sunsets, Folly Beach mornings, private entertainers, and nightlife tips for your Holy City girls weekend.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --pink-light: #fce4ec;
+      --pink-mid:   #f48fb1;
+      --pink-hot:   #d63384;
+      --pink-deep:  #b92b70;
+      --cream:      #fffaf7;
+      --charcoal:   #1f1f1f;
+      --warm-gray:  #666;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'DM Sans', Arial, sans-serif;
       background: #fffafc;
       color: #222;
+      font-size: 16px;
+      line-height: 1.75;
     }
+
+    /* ── Sticky Nav ───────────────────────────── */
+    .top-nav {
+      background: #fff;
+      border-bottom: 2px solid var(--pink-light);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 0.55rem 1rem;
+    }
+    .top-nav .brand {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--pink-hot);
+      text-decoration: none;
+    }
+    .top-nav .inner-links a {
+      color: var(--charcoal);
+      font-size: 0.82rem;
+      font-weight: 500;
+      text-decoration: none;
+      margin-left: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .top-nav .inner-links a:hover { color: var(--pink-hot); }
+
+    /* ── Hero ─────────────────────────────────── */
     .hero {
-      background: linear-gradient(135deg, rgba(255,255,255,.92), rgba(255,240,246,.95)),
+      background: linear-gradient(135deg,
+        rgba(255,255,255,.93) 0%,
+        rgba(255,220,236,.97) 50%,
+        rgba(244,143,177,.5) 100%),
         url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      padding: 110px 0 90px;
+      padding: 90px 0 70px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "🌸";
+      font-size: 160px;
+      opacity: 0.05;
+      position: absolute;
+      right: -30px;
+      bottom: -30px;
+      pointer-events: none;
+    }
+    .hero .badge-pill {
+      background: var(--pink-hot);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 5px 18px;
+      border-radius: 30px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 1rem;
     }
     .hero h1 {
-      font-size: 3rem;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight: 700;
+      color: var(--charcoal);
+      line-height: 1.15;
+      margin-bottom: 1rem;
     }
     .hero p {
-      font-size: 1.1rem;
-      max-width: 760px;
-      margin: 0 auto 1.5rem;
-    }
-    .section-pad {
-      padding: 70px 0;
-    }
-    .soft-card {
-      background: #fff;
-      border: 1px solid #f2d8e3;
-      border-radius: 18px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-      height: 100%;
-    }
-    .soft-card .card-body {
-      padding: 28px;
-    }
-    .tip-box {
-      background: #fff0f5;
-      border-left: 5px solid #d63384;
-      border-radius: 14px;
-      padding: 24px;
-    }
-    .cta-band {
-      background: #1f1f1f;
-      color: #fff;
-      border-radius: 22px;
-      padding: 40px;
+      font-size: 1.08rem;
+      max-width: 720px;
+      margin: 0 auto 1.8rem;
+      color: #444;
     }
     .btn-pink {
-      background: #d63384;
+      background: var(--pink-hot);
       color: #fff;
       border: none;
+      border-radius: 30px;
+      padding: 0.75rem 2.2rem;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background 0.2s, transform 0.2s;
+      text-decoration: none;
+      display: inline-block;
     }
     .btn-pink:hover {
-      background: #b92b70;
+      background: var(--pink-deep);
       color: #fff;
+      transform: translateY(-2px);
     }
-    .navbar-brand {
+
+    /* ── Section spacing ──────────────────────── */
+    .section-pad { padding: 70px 0; }
+    .bg-light-pink { background: #fff5f8; }
+
+    /* ── Soft cards ───────────────────────────── */
+    .soft-card {
+      background: #fff;
+      border: 1.5px solid #f2d8e3;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      height: 100%;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .soft-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(214,51,132,0.12);
+    }
+    .soft-card .card-body { padding: 26px; }
+    .soft-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--charcoal);
+      margin-bottom: 0.6rem;
+    }
+    .soft-card p { color: #555; margin-bottom: 0; font-size: 0.96rem; }
+
+    .card-icon {
+      font-size: 1.6rem;
+      margin-bottom: 0.6rem;
+      display: block;
+    }
+
+    .tag-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 0.7rem; }
+    .tag {
+      background: var(--pink-light);
+      color: var(--pink-deep);
+      font-size: 0.7rem;
       font-weight: 700;
-      letter-spacing: .3px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
     }
-    .bg-light-pink {
-      background: #fff5f8;
+
+    .cta-link {
+      display: inline-block;
+      margin-top: 0.65rem;
+      color: var(--pink-hot);
+      font-weight: 600;
+      font-size: 0.88rem;
+      text-decoration: none;
+      border-bottom: 2px solid var(--pink-mid);
     }
+    .cta-link:hover { color: var(--pink-deep); border-color: var(--pink-deep); }
+
+    /* ── Section label ────────────────────────── */
+    .section-label {
+      text-align: center;
+      margin: 0 0 2rem;
+    }
+    .section-label span {
+      background: var(--pink-hot);
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 0.95rem;
+      padding: 5px 22px;
+      border-radius: 30px;
+    }
+
+    /* ── Itinerary timeline ───────────────────── */
+    .timeline { position: relative; padding-left: 2.5rem; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 14px;
+      top: 6px;
+      bottom: 6px;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--pink-hot), var(--pink-light));
+    }
+    .tl-item {
+      position: relative;
+      margin-bottom: 1.8rem;
+    }
+    .tl-item::before {
+      content: '';
+      position: absolute;
+      left: -2rem;
+      top: 8px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--pink-hot);
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 2px var(--pink-hot);
+    }
+    .tl-item .tl-time {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--pink-hot);
+      letter-spacing: 0.06em;
+      margin-bottom: 2px;
+    }
+    .tl-item h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: var(--charcoal);
+      margin-bottom: 0.25rem;
+    }
+    .tl-item p {
+      font-size: 0.93rem;
+      color: #555;
+      margin: 0;
+    }
+
+    /* ── Tip box ──────────────────────────────── */
+    .tip-box {
+      background: #fff0f5;
+      border-left: 5px solid var(--pink-hot);
+      border-radius: 0 14px 14px 0;
+      padding: 1.6rem 2rem;
+    }
+    .tip-box h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--pink-deep);
+      font-size: 1.15rem;
+      margin-bottom: 0.6rem;
+    }
+
+    /* ── CTA band ─────────────────────────────── */
+    .cta-band {
+      background: linear-gradient(135deg, var(--pink-hot), var(--pink-deep));
+      color: #fff;
+      border-radius: 20px;
+      padding: 2.8rem 2.5rem;
+      text-align: center;
+      box-shadow: 0 8px 28px rgba(185,43,112,0.25);
+    }
+    .cta-band h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 0.7rem;
+    }
+    .cta-band p { color: rgba(255,255,255,0.9); margin-bottom: 1.3rem; }
+    .btn-white {
+      background: #fff;
+      color: var(--pink-deep);
+      font-weight: 700;
+      padding: 0.75rem 2.2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1rem;
+      display: inline-block;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-white:hover { background: var(--pink-light); transform: scale(1.04); color: var(--pink-deep); }
+
+    /* ── Related pages ────────────────────────── */
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 10px;
+      margin-top: 1rem;
+    }
+    .related-link {
+      display: block;
+      background: var(--pink-light);
+      color: var(--pink-deep);
+      font-weight: 600;
+      font-size: 0.86rem;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      text-align: center;
+      border: 1.5px solid var(--pink-mid);
+      transition: background 0.2s, color 0.2s;
+    }
+    .related-link:hover {
+      background: var(--pink-hot);
+      color: #fff;
+      border-color: var(--pink-hot);
+    }
+
+    /* ── Footer ───────────────────────────────── */
     footer {
       background: #111;
-      color: rgba(255,255,255,0.8);
+      color: rgba(255,255,255,0.7);
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.88rem;
     }
-    footer a {
-      color: #fff;
-      text-decoration: none;
+    footer a { color: var(--pink-mid); text-decoration: none; }
+    footer a:hover { color: var(--pink-hot); }
+
+    /* ── General link color ───────────────────── */
+    a { color: var(--pink-hot); }
+    a:hover { color: var(--pink-deep); }
+
+    @media (max-width: 576px) {
+      .top-nav .inner-links a { font-size: 0.72rem; margin-left: 0.5rem; }
+      .cta-band { padding: 2rem 1.2rem; }
     }
   </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Fling Before The Ring</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Charleston</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Bachelorette Ideas</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Nightlife</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-        </ul>
-      </div>
+  <!-- Sticky Nav -->
+  <nav class="top-nav d-flex align-items-center justify-content-between flex-wrap gap-2">
+    <a class="brand" href="index.html">Fling Before The Ring</a>
+    <div class="inner-links">
+      <a href="index.html">Home</a>
+      <a href="last-fling-before-the-ring-charleston.html">Low Key Activities</a>
+      <a href="brunch-midday-charleston.html">Brunch</a>
+      <a href="birthday-party-ideas.html">Birthday Ideas</a>
+      <a href="about.html">About</a>
+      <a href="https://www.partycharleston.com" target="_blank" rel="noopener">Party Charleston</a>
     </div>
   </nav>
 
-  <section class="hero text-center">
+  <!-- Hero -->
+  <section class="hero">
     <div class="container">
-      <span class="badge text-bg-dark mb-3 px-3 py-2">Charleston Bachelorette Guide</span>
-      <h1>Charleston Bachelorette Party Ideas That Mix Classy Days With Big Nights</h1>
+      <div class="badge-pill">Charleston Bachelorette Guide</div>
+      <h1>Charleston Bachelorette Party Ideas<br>That Mix Classy Days With Big Nights</h1>
       <p>
-        Charleston, South Carolina is one of the best places to celebrate a bride-to-be. With beach access,
-        beautiful brunch spots, rooftop cocktails, walkable downtown streets, and a nightlife scene that keeps
-        the weekend moving, it is easy to build an unforgettable bachelorette itinerary.
+        Charleston, South Carolina — the Holy City — is one of the most consistently ranked bachelorette destinations on the East Coast. With <strong>Folly Beach</strong>, <strong>Isle of Palms</strong>, and <strong>Sullivan's Island</strong> within 30 minutes, a walkable <strong>King Street</strong> lined with boutiques and rooftop bars, and a Lowcountry dining scene loaded with James Beard–recognized restaurants, it delivers the full spectrum: romantic mornings, beach afternoons, and nights that get memorable fast.
       </p>
-      <a href="#ideas" class="btn btn-pink btn-lg px-4">Explore the Charleston Guide</a>
+      <a href="#ideas" class="btn-pink">Explore the Charleston Guide</a>
     </div>
   </section>
 
+  <!-- Why Charleston -->
   <section class="section-pad">
     <div class="container">
-      <div class="row align-items-center g-4">
+      <div class="row align-items-center g-5">
         <div class="col-lg-6">
-          <h2 class="fw-bold mb-3">Why Charleston Works So Well For Bachelorette Weekends</h2>
+          <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="mb-3">Why Charleston Works So Well For Bachelorette Weekends</h2>
           <p>
-            Charleston gives your group a little bit of everything. You can start the day with coffee and brunch,
-            spend the afternoon shopping, take photos around the historic district, head to the beach for a few
-            hours, and still have plenty of energy left for dinner and dancing.
+            The Holy City is compact enough to be walkable but packed enough to fill three full days without repeating yourself. Fly into <strong>Charleston International Airport (CHS)</strong> off <strong>Aviation Avenue in North Charleston</strong> and you're 20 minutes from downtown, 35 minutes from <strong>Folly Beach via SC-171</strong>, and about 30 minutes from <strong>Isle of Palms via the IOP Connector off US-17</strong>.
           </p>
           <p>
-            The city feels polished without being too formal, and there are plenty of ways to plan a girls trip
-            that feels fun, stylish, and easy to customize. Whether your group wants upscale dinners, casual bars,
-            beach clubs, live music, or a packed dance floor, Charleston makes it simple to blend all of those
-            into one weekend.
+            The <strong>downtown peninsula</strong> — bounded by the Ashley River to the west and the Cooper River to the east — keeps everything walkable. <strong>Upper King Street</strong> handles shopping and cocktail bars. The <strong>French Quarter</strong> handles fine dining. <strong>East Bay Street</strong> handles waterfront views and Rainbow Row photos. <strong>Market Street</strong> handles the City Market and late-night spots. It's all within about a mile of each other, which means no one's wasting the night in an Uber.
+          </p>
+          <p>
+            Whether the bride wants low-key Lowcountry vibes or a full-tilt girls weekend, the city bends to fit. That's the secret to why Charleston keeps showing up on every bachelorette destination list — it genuinely works for every group type.
           </p>
         </div>
         <div class="col-lg-6">
           <div class="soft-card">
             <div class="card-body">
-              <h3 class="h5 fw-bold mb-3">A Smart Charleston Bachelorette Formula</h3>
-              <ul class="mb-0">
-                <li class="mb-2">Brunch and coffee in the morning</li>
-                <li class="mb-2">Shopping or beach time in the afternoon</li>
-                <li class="mb-2">Dinner downtown before the nightlife starts</li>
-                <li class="mb-2">Live music, rooftop cocktails, or club plans at night</li>
-                <li class="mb-0">A flexible itinerary so the bride gets the best of every vibe</li>
-              </ul>
+              <h3 style="font-family:'Playfair Display',serif; font-size:1.15rem;" class="mb-3">A Smart Charleston Bachelorette Formula</h3>
+              <div class="timeline">
+                <div class="tl-item">
+                  <div class="tl-time">Morning</div>
+                  <h4>Brunch on the Peninsula</h4>
+                  <p>Poogan's Porch on Queen Street, Miller's All Day on King, or a live brunch show option near the <strong>Market Street corridor</strong>.</p>
+                </div>
+                <div class="tl-item">
+                  <div class="tl-time">Afternoon</div>
+                  <h4>Beach, Shopping, or a Workshop</h4>
+                  <p>Candle-making at <strong>Candlefish on King Street</strong>, a boutique crawl from <strong>Upper King to the French Quarter</strong>, or sand at <strong>Isle of Palms Front Beach</strong>.</p>
+                </div>
+                <div class="tl-item">
+                  <div class="tl-time">Evening</div>
+                  <h4>Dinner + Rooftop Cocktails</h4>
+                  <p>Reserve early at FIG, Husk on Queen, or <strong>Slightly North of Broad on East Bay</strong> — then rooftop drinks at The Watch on Wentworth or the Vendue.</p>
+                </div>
+                <div class="tl-item">
+                  <div class="tl-time">Night</div>
+                  <h4>Private Show or Live Music</h4>
+                  <p>A private entertainer at your rental, or live music and dancing near <strong>Upper King Street</strong> or the <strong>Market Street nightlife corridor</strong>.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -144,22 +402,142 @@
     </div>
   </section>
 
+  <!-- Ideas Grid -->
   <section id="ideas" class="section-pad bg-light-pink">
     <div class="container">
       <div class="text-center mb-5">
-        <h2 class="fw-bold">Best Charleston Bachelorette Party Ideas</h2>
-        <p class="mb-0">Build a weekend that feels relaxing by day and exciting by night.</p>
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700;">Best Charleston Bachelorette Party Ideas</h2>
+        <p class="mb-0" style="color:#555;">Organized by vibe — pick what fits your bride's personality and your group's energy.</p>
       </div>
 
+      <div class="section-label"><span>☀️ Daytime Activities</span></div>
+      <div class="row g-4 mb-5">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card">
+            <div class="card-body">
+              <span class="card-icon">🧁</span>
+              <h3>Brunch Downtown</h3>
+              <p>
+                Start at <strong>Poogan's Porch on Queen Street</strong> (the Victorian townhouse with the legendary fried chicken biscuit), <strong>Miller's All Day on King Street</strong>, or <strong>The Macintosh on King</strong> for a more refined sit-down. Book ahead — weekend brunch tables disappear fast.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Queen Street</span>
+                <span class="tag">King Street</span>
+                <span class="tag">Downtown Brunch</span>
+              </div>
+              <a class="cta-link" href="brunch-midday-charleston.html">See All Brunch Options →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card">
+            <div class="card-body">
+              <span class="card-icon">🕯️</span>
+              <h3>Candle Making – Candlefish on King Street</h3>
+              <p>
+                <a href="https://www.candlefishco.com" target="_blank" rel="noopener">Candlefish</a> on <strong>upper King Street</strong> offers private BYOB candle-making workshops for groups up to 20. Choose from 100+ scents and pour custom candles to take home. <a href="https://tijonperfumebar.com" target="_blank" rel="noopener">Tijon Fragrance Lab</a> on middle King does custom perfume blending for a more personal memento.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Upper King</span>
+                <span class="tag">BYOB Workshop</span>
+                <span class="tag">Private Group</span>
+              </div>
+              <a class="cta-link" href="https://www.candlefishco.com" target="_blank" rel="noopener">Book Candlefish →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card">
+            <div class="card-body">
+              <span class="card-icon">🛍️</span>
+              <h3>King Street Boutique Crawl</h3>
+              <p>
+                Work your way from <strong>Kenny Flowers at 345 King Street</strong> (rooftop Cabana Club rentable for groups), south through <strong>Savannah Bee Co.</strong> for mead tastings, into the <strong>French Quarter boutiques near Market Street</strong>. The King Street shopping tour starting at <strong>The Watch on Wentworth Street</strong> adds guided wine stops and boutique discounts.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Upper King</span>
+                <span class="tag">French Quarter</span>
+                <span class="tag">Wine & Shopping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card">
+            <div class="card-body">
+              <span class="card-icon">🏖️</span>
+              <h3>Beach Day – Folly, IOP, or Sullivan's</h3>
+              <p>
+                Three beaches, three personalities. <strong>Folly Beach off Folly Road (SC-171)</strong> is funky and local — check for weekend music festivals. <strong>Isle of Palms via the IOP Connector</strong> is resort-easy with calmer water. <strong>Sullivan's Island</strong> is serene with low-rise beach bars near Station 22½.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Folly Beach</span>
+                <span class="tag">Isle of Palms</span>
+                <span class="tag">Sullivan's Island</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card">
+            <div class="card-body">
+              <span class="card-icon">📸</span>
+              <h3>Rainbow Row & The Battery Walk</h3>
+              <p>
+                The iconic 13 pastel Georgian houses at <strong>83–107 East Bay Street</strong>, then south to <strong>Waterfront Park's pineapple fountain</strong>, <strong>The Battery seawall</strong>, and a picnic under live oaks at <strong>White Point Gardens</strong>. Entirely free. Best before 9am for golden-hour light and zero crowds.
+              </p>
+              <div class="tag-row">
+                <span class="tag">East Bay Street</span>
+                <span class="tag">Waterfront Park</span>
+                <span class="tag">White Point Gardens</span>
+                <span class="tag">Free</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card">
+            <div class="card-body">
+              <span class="card-icon">⛵</span>
+              <h3>Shem Creek Afternoon & Sunset Sail</h3>
+              <p>
+                Cross the <strong>Arthur Ravenel Jr. Bridge</strong> into <strong>Mount Pleasant</strong> for waterfront drinks at <strong>Tavern & Table</strong> or <strong>Red's Ice House on Shem Creek</strong>. The <a href="https://palmettobreezecat.com" target="_blank" rel="noopener">Palmetto Breeze catamaran</a> departs from Shem Creek for 2-hour BYOB sunset sails — one of the most genuinely memorable low-key bach experiences in the area.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Shem Creek</span>
+                <span class="tag">Mount Pleasant</span>
+                <span class="tag">Sunset Sail</span>
+              </div>
+              <a class="cta-link" href="https://palmettobreezecat.com" target="_blank" rel="noopener">Book a Sunset Sail →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section-label"><span>🌙 Evening & Nightlife</span></div>
       <div class="row g-4">
+
         <div class="col-md-6 col-lg-4">
           <div class="soft-card">
             <div class="card-body">
-              <h3 class="h5 fw-bold">Start With A Downtown Brunch</h3>
-              <p class="mb-0">
-                Charleston brunch is one of the easiest ways to kick off the weekend. Pick a place near downtown
-                so the group can eat, sip mimosas, and ease into the day before shopping or sightseeing.
+              <span class="card-icon">🍽️</span>
+              <h3>Dinner in the French Quarter or South of Broad</h3>
+              <p>
+                Book early at <a href="https://www.huskrestaurant.com" target="_blank" rel="noopener">Husk on Queen Street</a>, <strong>FIG on Meeting Street</strong> (James Beard–winning Sean Brock territory), or <strong>Slightly North of Broad (SNOB) on East Bay</strong>. For a Victorian townhouse feel, <strong>Poogan's Porch on Queen Street</strong> has a massive wine list. Reserve 3–4 weeks ahead for weekend nights.
               </p>
+              <div class="tag-row">
+                <span class="tag">Queen Street</span>
+                <span class="tag">Meeting Street</span>
+                <span class="tag">East Bay</span>
+                <span class="tag">James Beard</span>
+              </div>
             </div>
           </div>
         </div>
@@ -167,11 +545,16 @@
         <div class="col-md-6 col-lg-4">
           <div class="soft-card">
             <div class="card-body">
-              <h3 class="h5 fw-bold">Plan Beach Time</h3>
-              <p class="mb-0">
-                Folly Beach and Isle of Palms are easy favorites for bachelorette groups that want sun, photos,
-                and a laid-back afternoon before getting ready for dinner.
+              <span class="card-icon">🥂</span>
+              <h3>Rooftop Cocktails Before The Night Starts</h3>
+              <p>
+                Hit <strong>The Rooftop at the Vendue on Vendue Range</strong> (harbor views, incredible sunsets), <strong>The Watch rooftop on Wentworth Street</strong> for champagne and truffle fries, or <strong>Hotel Bennett's rooftop pool deck on King Street</strong> if you're staying there. Rooftops are ideal for the 7–9pm window before nightlife kicks in.
               </p>
+              <div class="tag-row">
+                <span class="tag">Vendue Range</span>
+                <span class="tag">Wentworth Street</span>
+                <span class="tag">King Street Hotels</span>
+              </div>
             </div>
           </div>
         </div>
@@ -179,11 +562,17 @@
         <div class="col-md-6 col-lg-4">
           <div class="soft-card">
             <div class="card-body">
-              <h3 class="h5 fw-bold">Walk King Street</h3>
-              <p class="mb-0">
-                A King Street stroll adds boutiques, selfies, coffee stops, and a classic Charleston backdrop to
-                the trip. It is one of the easiest ways to keep the group entertained between meals and events.
+              <span class="card-icon">👑</span>
+              <h3>Private Entertainer – Michael At Your Place</h3>
+              <p>
+                For the group that wants energy without a crowded club, <a href="https://michaelatyourplace.com" target="_blank" rel="noopener">Michael At Your Place</a> brings a private show directly to your rental — <strong>Isle of Palms beach house, Folly Beach vacation rental, or downtown Charleston Airbnb</strong>. Book through <a href="https://michaelafterdark.com" target="_blank" rel="noopener">Michael After Dark</a>. It's the most talked-about "last fling before the ring" activity among brides staying in the Lowcountry.
               </p>
+              <div class="tag-row">
+                <span class="tag">Private Show</span>
+                <span class="tag">Comes To You</span>
+                <span class="tag">IOP · Folly · Downtown</span>
+              </div>
+              <a class="cta-link" href="https://michaelatyourplace.com" target="_blank" rel="noopener">Book Michael At Your Place →</a>
             </div>
           </div>
         </div>
@@ -191,11 +580,17 @@
         <div class="col-md-6 col-lg-4">
           <div class="soft-card">
             <div class="card-body">
-              <h3 class="h5 fw-bold">Book A Nice Dinner</h3>
-              <p class="mb-0">
-                A good bachelorette dinner gives the weekend structure. Make reservations early so your group has
-                a comfortable place to gather before heading out for drinks and dancing.
+              <span class="card-icon">👻</span>
+              <h3>Ghost Tour – Old South Carriage or Bulldog Tours</h3>
+              <p>
+                <a href="https://www.oldsouthcarriage.com" target="_blank" rel="noopener">Old South Carriage</a> on <strong>Anson Street</strong> runs evening ghost carriage rides through <strong>Ansonborough and Harleston Village</strong>. <a href="https://bulldogtours.com" target="_blank" rel="noopener">Bulldog Tours</a> on <strong>North Market Street</strong> covers the <strong>Church Street corridor and City Market area</strong> on foot. 90 minutes, no walking stamina required — perfect in heels.
               </p>
+              <div class="tag-row">
+                <span class="tag">Anson Street</span>
+                <span class="tag">Church Street</span>
+                <span class="tag">Night Tour</span>
+              </div>
+              <a class="cta-link" href="https://www.oldsouthcarriage.com" target="_blank" rel="noopener">Book Old South Carriage →</a>
             </div>
           </div>
         </div>
@@ -203,11 +598,17 @@
         <div class="col-md-6 col-lg-4">
           <div class="soft-card">
             <div class="card-body">
-              <h3 class="h5 fw-bold">Add Rooftop Cocktails</h3>
-              <p class="mb-0">
-                Charleston rooftops work especially well for bachelorette parties because they feel elevated without
-                forcing the night to peak too early. They are perfect for photos and a first round before the club.
+              <span class="card-icon">💃</span>
+              <h3>Live Music & Dancing on Upper King</h3>
+              <p>
+                The <strong>Upper King Street corridor between Calhoun and Spring</strong> is the beating heart of Charleston nightlife. <strong>The Commodore</strong> delivers vintage-cool cocktails and live music. <strong>Prohibition</strong> near Market Street goes late with DJs. For something more current, check what's on at local live music venues and event spaces around the <strong>North Morrison corridor in NoMo</strong> — programming changes fast, so verify ahead.
               </p>
+              <div class="tag-row">
+                <span class="tag">Upper King</span>
+                <span class="tag">Calhoun Street</span>
+                <span class="tag">Live Music</span>
+                <span class="tag">NoMo</span>
+              </div>
             </div>
           </div>
         </div>
@@ -215,108 +616,119 @@
         <div class="col-md-6 col-lg-4">
           <div class="soft-card">
             <div class="card-body">
-              <h3 class="h5 fw-bold">Save One Night For Dancing</h3>
-              <p class="mb-0">
-                Every bachelorette trip needs one full nightlife moment. If your group wants music, energy, and a
-                crowd-ready atmosphere, plan ahead so everyone is dressed, on time, and ready to go.
+              <span class="card-icon">🍹</span>
+              <h3>In-Rental Cocktail Class</h3>
+              <p>
+                <a href="https://charlestoncocktailco.com" target="_blank" rel="noopener">Charleston Cocktail Co.</a> sends a bartender to your rental — Lowcountry Mule, custom cocktail competition, all of it. Works especially well for groups in <strong>Cannonborough-Elliotborough Airbnbs near Spring Street</strong> or <strong>downtown condos on Broad Street</strong> who want a great night without going out.
               </p>
+              <div class="tag-row">
+                <span class="tag">In-Home</span>
+                <span class="tag">Cannonborough</span>
+                <span class="tag">Broad Street</span>
+              </div>
+              <a class="cta-link" href="https://charlestoncocktailco.com" target="_blank" rel="noopener">Book Cocktail Co. →</a>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- Full Itinerary Sample -->
   <section class="section-pad">
     <div class="container">
-      <div class="row g-5 align-items-center">
+      <div class="row g-5 align-items-start">
         <div class="col-lg-7">
-          <h2 class="fw-bold mb-3">Charleston Nightlife Pick: Open Air Live</h2>
-          <p>
-            If your bachelorette group wants a nightlife option with a modern, music-forward feel, Open Air Live is
-            the kind of venue worth watching while planning your Charleston itinerary. Recent Charleston-area posts
-            and entertainment mentions show the name actively tied to local live music and nightlife energy, making
-            it a timely addition to a girls weekend game plan.
-          </p>
-          <p>
-            For a bride tribe, that makes it a useful option when you want the night to feel more exciting than a
-            standard bar stop. It can work especially well as part of a bigger evening plan that starts with dinner,
-            moves into cocktails, and ends somewhere with a stronger crowd, live music atmosphere, or event feel.
-          </p>
-          <p class="mb-0">
-            Since nightlife programming can change quickly, it is smart to check the venue’s current event listings,
-            entry rules, and ticket details before you finalize the schedule.
-          </p>
+          <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="mb-3">A Sample 2-Night Charleston Bachelorette Itinerary</h2>
+          <p style="color:#555;">Built around a <strong>Wild Dunes or downtown Airbnb</strong> base. Adjust beach vs. city balance to taste.</p>
+
+          <p class="fw-bold mb-1" style="color:var(--pink-hot);">Friday</p>
+          <p>Arrive at CHS, check into your <strong>Isle of Palms rental near Palm Boulevard</strong> or a <strong>downtown vacation home on Tradd Street or Broad Street</strong>. Welcome drinks at the rental, then dinner at <strong>Husk on Queen Street</strong> — book this reservation weeks in advance. End the night with rooftop drinks at <strong>The Rooftop at the Vendue on Vendue Range</strong> overlooking Charleston Harbor.</p>
+
+          <p class="fw-bold mb-1" style="color:var(--pink-hot);">Saturday Morning</p>
+          <p>Brunch at <strong>Miller's All Day on King Street</strong> or the <a href="brunch-midday-charleston.html">live brunch show option near Market Street</a>. Walk off brunch on a <strong>Rainbow Row and Battery stroll</strong> starting at <strong>East Bay Street</strong>.</p>
+
+          <p class="fw-bold mb-1" style="color:var(--pink-hot);">Saturday Afternoon</p>
+          <p>Candle-making at <a href="https://www.candlefishco.com" target="_blank" rel="noopener">Candlefish on King Street</a> (BYOB), followed by a shopping crawl toward <strong>the French Quarter</strong>. Or swap for a <strong>Folly Beach afternoon</strong> if the weather is perfect.</p>
+
+          <p class="fw-bold mb-1" style="color:var(--pink-hot);">Saturday Night</p>
+          <p>Dinner at <strong>FIG on Meeting Street</strong> or <strong>Slightly North of Broad on East Bay</strong>, then the highlight of the weekend: a private show from <a href="https://michaelatyourplace.com" target="_blank" rel="noopener">Michael At Your Place</a> at your rental, or a ghost carriage tour with <a href="https://www.oldsouthcarriage.com" target="_blank" rel="noopener">Old South Carriage on Anson Street</a> before hitting <strong>Upper King Street</strong> bars.</p>
+
+          <p class="fw-bold mb-1" style="color:var(--pink-hot);">Sunday</p>
+          <p>Recovery brunch, a final stroll through the <strong>Charleston City Market on Market Street</strong> for sweetgrass baskets and souvenirs, then head to CHS for flights home. Check the <a href="birthday-party-ideas.html">birthday ideas page</a> if anyone in the group has a milestone coming up — several of these activities double perfectly.</p>
         </div>
         <div class="col-lg-5">
-          <div class="soft-card">
+          <div class="soft-card mb-4">
             <div class="card-body">
-              <h3 class="h5 fw-bold mb-3">Night Out Planning Tips</h3>
-              <ul class="mb-0">
-                <li class="mb-2">Confirm event night and start time in advance</li>
-                <li class="mb-2">Check dress code and entry rules before leaving</li>
-                <li class="mb-2">Use rideshare if your group is staying downtown</li>
-                <li class="mb-2">Keep dinner reservations early enough to avoid rushing</li>
-                <li class="mb-0">Look up official ticketing or venue pages before you go</li>
-              </ul>
+              <h3 style="font-family:'Playfair Display',serif;">Where to Stay</h3>
+              <p style="font-size:0.93rem;">
+                <strong>Downtown (smaller groups of 4–8):</strong> Airbnbs near <strong>Upper King, Cannonborough-Elliotborough, or Harleston Village</strong> put you within walking distance of everything. <strong>Hotel Bennett on King Street</strong> has a rooftop pool and is walking distance to every restaurant on this list.
+              </p>
+              <p style="font-size:0.93rem; margin:0;">
+                <strong>Beach stays (larger groups of 10–15):</strong> <strong>Isle of Palms rentals near Front Beach on Palm Boulevard</strong> or <strong>Wild Dunes villas</strong> for more space. Uber to downtown runs about 25–30 minutes. <strong>Folly Beach rentals near Center Street</strong> are closer to downtown (~20 min) and have a cooler, more local vibe.
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-pad bg-light-pink">
-    <div class="container">
-      <div class="tip-box">
-        <h2 class="h4 fw-bold mb-3">Helpful Tip For Younger Groups</h2>
-        <p class="mb-2">
-          If your bachelorette group includes guests under 21, always check the official venue policy before making
-          nightlife plans. Some events may have different rules depending on the night, ticket type, or whether the
-          venue is operating as a concert space, club, or bar.
-        </p>
-        <p class="mb-0">
-          Event discovery apps and listing platforms can help you find what is happening around Charleston, but they
-          do not replace the venue’s own age requirements, entry policies, or ID checks. The safest move is to verify
-          directly with the official event listing before your group heads out.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-pad">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <h2 class="fw-bold mb-3">Build The Weekend Around The Bride</h2>
-          <p>
-            The best Charleston bachelorette parties are the ones that balance structure with flexibility. Pick one
-            anchor event for each part of the day, then leave room for spontaneous stops, photos, snacks, and outfit
-            changes. That keeps the trip fun instead of overbooked.
-          </p>
-          <p class="mb-0">
-            A good formula is simple: brunch, a daytime outing, a polished dinner, and one memorable night out. That
-            gives the bride the feeling of a full experience without making the group feel rushed.
-          </p>
-        </div>
-        <div class="col-lg-6">
-          <div class="cta-band">
-            <h2 class="h3 fw-bold mb-3">Planning A Charleston Bachelorette Party?</h2>
-            <p>
-              Use this page as your starting point for brunch ideas, beach plans, downtown stops, and nightlife
-              recommendations for your bride tribe.
+          <div class="tip-box">
+            <h3>Planning Tips</h3>
+            <p style="font-size:0.93rem; margin-bottom:0.6rem;">
+              Best weather: <strong>March–May</strong> and <strong>September–November</strong>. Summer works but expect heat and humidity — schedule beach time early, evenings downtown.
             </p>
-            <a href="#" class="btn btn-light btn-lg">Explore More Charleston Ideas</a>
+            <p style="font-size:0.93rem; margin-bottom:0.6rem;">
+              Book restaurant reservations <strong>3–4 weeks ahead</strong> for weekend nights, especially FIG, Husk, and Poogan's Porch.
+            </p>
+            <p style="font-size:0.93rem; margin:0;">
+              If your group includes guests under 21, verify each venue's entry policy directly — nightlife rules vary by event, night, and venue type.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="py-4">
-    <div class="container text-center">
-      <p class="mb-1">© 2026 Fling Before The Ring</p>
-      <small>Charleston bachelorette party ideas, nightlife tips, and weekend inspiration.</small>
+  <!-- CTA Band -->
+  <section class="section-pad bg-light-pink">
+    <div class="container">
+      <div class="cta-band">
+        <h2>Need a Private Entertainer for Your Charleston Bach?</h2>
+        <p>Michael At Your Place brings a fully private show to your rental — Isle of Palms, Folly Beach, downtown Charleston, and the greater Lowcountry area.</p>
+        <a href="https://michaelatyourplace.com" class="btn-white" target="_blank" rel="noopener">Book Michael At Your Place</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Pages -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="mb-2">More from Our Charleston Guides</h2>
+          <p style="color:#555; margin-bottom:1.5rem;">Everything you need for the perfect Holy City girls weekend.</p>
+          <div class="related-grid">
+            <a class="related-link" href="index.html">🏠 Home</a>
+            <a class="related-link" href="last-fling-before-the-ring-charleston.html">💍 Low Key Activities</a>
+            <a class="related-link" href="brunch-midday-charleston.html">🥞 Brunch Options</a>
+            <a class="related-link" href="birthday-party-ideas.html">🎂 Birthday Ideas</a>
+            <a class="related-link" href="about.html">💁 About</a>
+          </div>
+          <p class="mt-4" style="font-size:0.92rem; color:#777;">
+            More Charleston resources: <a href="https://www.partycharleston.com" target="_blank" rel="noopener">Party Charleston</a> ·
+            <a href="https://www.partycharleston.com/bach-party/bachelorette-brunch-show-charleston-sc.html" target="_blank" rel="noopener">Live Brunch Show</a> ·
+            <a href="https://michaelafterdark.com" target="_blank" rel="noopener">Michael After Dark</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="mb-1">© 2026 <a href="index.html">Fling Before The Ring</a> · Charleston, South Carolina</p>
+      <p class="mb-0" style="opacity:0.6; font-size:0.8rem;">
+        Charleston bachelorette party ideas, last fling before the ring activities, and Holy City girls weekend inspiration.
+      </p>
     </div>
   </footer>
 

@@ -2,137 +2,591 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Charleston Midday Brunch Show | Fun Brunch Activity in Charleston SC</title>
-  <meta name="description" content="Looking for a Charleston midday brunch show? Discover a fun midday brunch activity and entertainment idea for bachelorette parties, girls trips, and girls weekends in Charleston SC.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <title>Charleston Midday Brunch Show | Private Brunch Entertainment for Bachelorette Parties & Girls Trips</title>
+  <meta name="description" content="Book a private Charleston midday brunch show with Michael At Your Place. Perfect for bachelorette parties, girls weekends, and birthday brunches in Charleston SC, Folly Beach, Isle of Palms, and Mount Pleasant.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink-light: #fce4ec;
+      --pink-mid:   #f48fb1;
+      --pink-hot:   #e83e8c;
+      --pink-deep:  #c2185b;
+      --charcoal:   #1f1f1f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', Arial, sans-serif;
+      background: #fffafc;
+      color: #222;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    /* ── Nav ─────────────────────────────────── */
+    .top-nav {
+      background: #fff;
+      border-bottom: 2px solid var(--pink-light);
+      padding: 0.55rem 1.2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .top-nav .brand {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--pink-hot);
+      text-decoration: none;
+    }
+    .top-nav .nav-links a {
+      color: var(--charcoal);
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-decoration: none;
+      margin-left: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .top-nav .nav-links a:hover { color: var(--pink-hot); }
+
+    /* ── Hero ─────────────────────────────────── */
+    .hero {
+      background: linear-gradient(160deg, #fce4ec 0%, #f8bbd0 55%, #f48fb1 100%);
+      padding: 80px 1rem 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "🌸";
+      font-size: 180px;
+      opacity: 0.06;
+      position: absolute;
+      top: -20px; left: -30px;
+      pointer-events: none;
+    }
+    .hero::after {
+      content: "🥂";
+      font-size: 140px;
+      opacity: 0.06;
+      position: absolute;
+      bottom: -20px; right: -20px;
+      pointer-events: none;
+    }
+    .hero .pill {
+      display: inline-block;
+      background: var(--pink-hot);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 18px;
+      border-radius: 30px;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      color: var(--charcoal);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .hero p.lead {
+      font-size: 1.08rem;
+      max-width: 680px;
+      margin: 0 auto 2rem;
+      color: #444;
+    }
+    .btn-pink {
+      background: var(--pink-hot);
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      padding: 0.8rem 2.4rem;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 4px 16px rgba(232,62,140,0.3);
+    }
+    .btn-pink:hover {
+      background: var(--pink-deep);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    /* ── Photo slot ───────────────────────────── */
+    .photo-slot {
+      background: linear-gradient(135deg, #c2185b, #e83e8c);
+      border-radius: 16px;
+      overflow: hidden;
+      margin: 2rem auto;
+      max-width: 560px;
+      box-shadow: 0 12px 40px rgba(194,24,91,0.25);
+    }
+    .photo-slot img {
+      width: 100%;
+      display: block;
+    }
+
+    /* ── Contact strip ────────────────────────── */
+    .contact-strip {
+      background: #fff;
+      border: 2px solid var(--pink-light);
+      border-radius: 14px;
+      padding: 1.4rem 2rem;
+      display: inline-block;
+      margin-top: 1.5rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+    .contact-strip .business-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--pink-deep);
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+    .contact-strip .phone {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      letter-spacing: 0.03em;
+    }
+    .contact-strip a {
+      color: var(--pink-hot);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    /* ── Section label ────────────────────────── */
+    .section-label {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .section-label span {
+      background: var(--pink-hot);
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 0.95rem;
+      padding: 5px 22px;
+      border-radius: 30px;
+    }
+
+    /* ── Cards ────────────────────────────────── */
+    .info-card {
+      background: #fff;
+      border: 1.5px solid #f2d8e3;
+      border-radius: 16px;
+      padding: 1.8rem;
+      height: 100%;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .info-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 28px rgba(232,62,140,0.12);
+    }
+    .info-card .card-icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.7rem;
+      display: block;
+    }
+    .info-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--charcoal);
+      margin-bottom: 0.5rem;
+    }
+    .info-card p, .info-card li {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0;
+    }
+    .info-card ul { padding-left: 1.2rem; margin: 0; }
+    .info-card li { margin-bottom: 0.4rem; }
+
+    .tag-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 0.8rem; }
+    .tag {
+      background: var(--pink-light);
+      color: var(--pink-deep);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── Left-border highlight ────────────────── */
+    .highlight-box {
+      background: #fff0f5;
+      border-left: 5px solid var(--pink-hot);
+      border-radius: 0 14px 14px 0;
+      padding: 1.6rem 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .highlight-box h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--pink-deep);
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .highlight-box p { font-size: 0.95rem; color: #555; margin: 0; }
+
+    /* ── Booking CTA band ─────────────────────── */
+    .book-band {
+      background: var(--charcoal);
+      color: #fff;
+      border-radius: 20px;
+      padding: 3rem 2.5rem;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    }
+    .book-band h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      margin-bottom: 0.6rem;
+    }
+    .book-band p { color: rgba(255,255,255,0.8); margin-bottom: 0.5rem; }
+    .book-band .phone-big {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--pink-mid);
+      margin: 0.8rem 0;
+      letter-spacing: 0.04em;
+    }
+    .book-band a.ig-link {
+      color: var(--pink-mid);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .book-band a.ig-link:hover { color: #fff; }
+
+    /* ── Related grid ─────────────────────────── */
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+      gap: 10px;
+    }
+    .related-link {
+      display: block;
+      background: var(--pink-light);
+      color: var(--pink-deep);
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      text-align: center;
+      border: 1.5px solid var(--pink-mid);
+      transition: background 0.2s, color 0.2s;
+    }
+    .related-link:hover {
+      background: var(--pink-hot);
+      color: #fff;
+      border-color: var(--pink-hot);
+    }
+
+    /* ── Footer ───────────────────────────────── */
+    footer {
+      background: #111;
+      color: rgba(255,255,255,0.65);
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.86rem;
+    }
+    footer a { color: var(--pink-mid); text-decoration: none; }
+    footer a:hover { color: var(--pink-hot); }
+
+    a { color: var(--pink-hot); }
+    a:hover { color: var(--pink-deep); }
+
+    @media (max-width: 576px) {
+      .top-nav .nav-links a { font-size: 0.72rem; margin-left: 0.5rem; }
+      .book-band { padding: 2rem 1.2rem; }
+      .book-band .phone-big { font-size: 1.3rem; }
+    }
+  </style>
 </head>
 <body>
 
-<div class="container-fluid p-0">
+<!-- Sticky Nav -->
+<nav class="top-nav">
+  <a class="brand" href="index.html">Fling Before The Ring</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="charleston-bachelorettes.html">Charleston Bach</a>
+    <a href="last-fling-before-the-ring-charleston.html">Activities</a>
+    <a href="birthday-party-ideas.html">Birthdays</a>
+    <a href="about.html">About</a>
+    <a href="https://www.partycharleston.com" target="_blank" rel="noopener">Party Charleston</a>
+  </div>
+</nav>
 
-  <!-- HERO / CTA SECTION -->
-  <section class="bg-light text-center py-5">
-    <div class="container">
-      <h1 class="mb-3">Charleston Midday Brunch Show</h1>
-      <p class="lead mb-4">
-        Looking for something fun to do before the nightlife starts?
-        A Charleston midday brunch show is a perfect daytime activity
-        for bachelorette parties, girls trips, and girls weekend brunch plans.
-      </p>
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="pill">Charleston Brunch Entertainment</div>
+    <h1>The Charleston Midday Brunch Show<br><em style="font-style:italic; color:var(--pink-deep);">Private Entertainment That Comes to You</em></h1>
+    <p class="lead">
+      Skip the crowded restaurant and bring the celebration to your rental. A private midday brunch show with <strong>Michael At Your Place</strong> is the most talked-about daytime activity for bachelorette parties, girls weekends, and birthday brunches across <strong>Charleston, Folly Beach, Isle of Palms, and Mount Pleasant</strong>.
+    </p>
+    <a href="#book" class="btn-pink">Book Your Brunch Show</a>
 
-      <!-- PHOTO SLOT -->
-      <div class="my-4">
-        <div class="bg-secondary text-white py-5">
-            <img src="michael.png" alt="Brunch Entertainment in Charleston">
+    <div class="photo-slot">
+      <img src="michael.png" alt="Michael At Your Place – private brunch entertainment for bachelorette parties in Charleston SC">
+    </div>
+
+    <div class="contact-strip">
+      <div class="business-name">Michael At Your Place</div>
+      <div style="font-size:0.85rem; color:#777; margin-bottom:0.4rem;">Charleston, SC · Folly Beach · Isle of Palms · Mount Pleasant</div>
+      <div class="phone">Call or Text: 843-360-9438</div>
+      <div style="margin-top:0.5rem;">
+        <a href="https://michaelatyourplace.com" target="_blank" rel="noopener">michaelatyourplace.com</a>
+        &nbsp;·&nbsp;
+        <a href="https://www.instagram.com/michaelatyourplace/" target="_blank" rel="noopener">View on Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What Is It -->
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="mb-3">What Is a Charleston Midday Brunch Show?</h2>
+        <p>
+          A Charleston midday brunch show is a <strong>private, in-home entertainment experience</strong> that arrives at your vacation rental, beach house, or private venue during late morning or early afternoon. Instead of fighting for a brunch reservation table at a packed King Street restaurant on a Saturday, your group stays in your space — whether that's a <strong>Wild Dunes villa on Isle of Palms</strong>, a <strong>Center Street Folly Beach rental</strong>, a <strong>downtown Charleston Airbnb in Cannonborough-Elliotborough</strong>, or a <strong>Mount Pleasant vacation home near Shem Creek</strong> — and the entertainment comes to you.
+        </p>
+        <p>
+          It's ideal for the window between late morning and early evening: after everyone's had coffee and before the nightlife energy kicks in. Groups typically pair the experience with catered food, mimosas from <strong>Total Wine on Sam Rittenberg Boulevard</strong> or <strong>Harris Teeter on Coleman Boulevard in Mount Pleasant</strong>, and a playlist that gets the afternoon started right.
+        </p>
+        <p>
+          The result is a memorable, completely personalized celebration that doesn't require reservations, Ubers, or heels at noon — and it creates the kind of group energy that carries into the rest of the night.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why It Works -->
+<section class="py-5" style="background:#fff5f8;">
+  <div class="container">
+    <div class="section-label"><span>✨ Why Groups Love It</span></div>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="info-card">
+          <span class="card-icon">🏠</span>
+          <h3>Completely Private</h3>
+          <p>No strangers at the next table. No waiting 45 minutes for a brunch table on a Saturday. Your group has the full experience in your own space at your own pace — exactly what a <strong>bachelorette brunch in Charleston</strong> should feel like.</p>
+          <div class="tag-row">
+            <span class="tag">Private Experience</span>
+            <span class="tag">No Reservations Needed</span>
+          </div>
         </div>
       </div>
 
-      <p class="fw-bold mt-4">
-        Book a private midday brunch entertainment experience in Charleston, SC
-      </p>
-      <p class="mb-1">
-        <strong>Michael at Your Place</strong><br>
-        Charleston, SC<br>
-        Call or Text: <strong>843-360-9438</strong>
-      </p>
-      <p>
-        <a href="https://www.instagram.com/michaelatyourplace/" target="_blank" rel="noopener">
-          View performances on Instagram
-        </a>
-      </p>
-    </div>
-  </section>
+      <div class="col-md-6 col-lg-4">
+        <div class="info-card">
+          <span class="card-icon">⏰</span>
+          <h3>Perfect Timing in the Day</h3>
+          <p>A midday show fits naturally between a late morning coffee run and an afternoon activity like a <a href="last-fling-before-the-ring-charleston.html">King Street boutique crawl</a>, a <strong>Folly Beach afternoon</strong>, or a sunset sail from <strong>Shem Creek in Mount Pleasant</strong>. It anchors the day without dominating it.</p>
+          <div class="tag-row">
+            <span class="tag">Late Morning</span>
+            <span class="tag">Early Afternoon</span>
+            <span class="tag">Lowcountry Timing</span>
+          </div>
+        </div>
+      </div>
 
-  <!-- WHAT IS IT SECTION -->
-  <section class="container py-5">
-    <div class="row">
-      <div class="col">
-        <h2>What Is a Charleston Midday Brunch Activity?</h2>
-        <p>
-          A Charleston midday brunch activity combines food, social time,
-          and light entertainment during the late morning or early afternoon.
-          It’s ideal for groups who want a memorable experience without waiting
-          until late at night.
-        </p>
-        <p>
-          Midday brunch entertainment works especially well for girls weekends,
-          bachelorette trips, and birthday brunch celebrations looking for
-          something fun and interactive.
-        </p>
+      <div class="col-md-6 col-lg-4">
+        <div class="info-card">
+          <span class="card-icon">📍</span>
+          <h3>Comes to You Anywhere in the Area</h3>
+          <p>Michael serves the entire Charleston metro — <strong>downtown peninsula</strong>, <strong>Folly Beach via SC-171</strong>, <strong>Isle of Palms via the IOP Connector</strong>, <strong>Sullivan's Island</strong>, <strong>James Island</strong>, and <strong>Mount Pleasant off US-17</strong>. Wherever your rental is, the show travels to it.</p>
+          <div class="tag-row">
+            <span class="tag">Isle of Palms</span>
+            <span class="tag">Folly Beach</span>
+            <span class="tag">Downtown</span>
+            <span class="tag">Mount Pleasant</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="info-card">
+          <span class="card-icon">🥂</span>
+          <h3>Pairs With Any Brunch Setup</h3>
+          <p>Order delivery from <strong>Toast! All-Day Kitchen on King Street</strong>, have a private chef bring Lowcountry classics, or do a full DIY mimosa bar with supplies from <strong>Harris Teeter on Coleman Boulevard</strong>. The entertainment wraps around whatever you've already got planned.</p>
+          <div class="tag-row">
+            <span class="tag">BYO Food & Drinks</span>
+            <span class="tag">Private Chef Option</span>
+            <span class="tag">Mimosa Bar</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="info-card">
+          <span class="card-icon">👯</span>
+          <h3>Built for Group Energy</h3>
+          <p>Whether it's 6 people or 20, a private show scales to the group. It creates a shared moment that bonds the <strong>bachelorette party crew</strong>, the <strong>birthday squad</strong>, or the <strong>girls trip group</strong> in a way that sitting at separate restaurant tables simply never does.</p>
+          <div class="tag-row">
+            <span class="tag">Small Groups</span>
+            <span class="tag">Large Groups</span>
+            <span class="tag">Group Bonding</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="info-card">
+          <span class="card-icon">📸</span>
+          <h3>Genuinely Memorable</h3>
+          <p>This is the activity that ends up in the group chat recap and the bride's Instagram story. It's the kind of experience people talk about <em>after</em> the trip — which makes it the ideal centerpiece for a <strong>last fling before the ring in Charleston</strong> or a <strong>milestone birthday brunch in the Lowcountry</strong>.</p>
+          <div class="tag-row">
+            <span class="tag">Bachelorette Highlight</span>
+            <span class="tag">Birthday Brunch</span>
+            <span class="tag">Girls Trip Memory</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Who It's For -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-6">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="mb-3">Who Books a Charleston Midday Brunch Show?</h2>
+
+        <div class="highlight-box">
+          <h3>🥂 Bachelorette Brunch in Charleston</h3>
+          <p>The most popular booking. Groups celebrating the bride-to-be who want a personalized daytime activity that stands out from the standard brunch-and-bar formula. Especially popular for groups staying in <strong>downtown Charleston near the French Quarter</strong>, <strong>Folly Beach Center Street rentals</strong>, and <strong>Isle of Palms beachfront houses on Palm Boulevard</strong>.</p>
+        </div>
+
+        <div class="highlight-box">
+          <h3>🎂 Birthday Brunch Celebrations</h3>
+          <p>Milestone birthdays — 30th, 40th, 50th — where the group wants something more special than a restaurant table. Works perfectly for groups renting a <strong>Mount Pleasant vacation home near Shem Creek</strong> or a <strong>James Island short-term rental</strong>. See also: <a href="birthday-party-ideas.html">birthday party ideas in Charleston</a>.</p>
+        </div>
+
+        <div class="highlight-box">
+          <h3>👯 Girls Trip Daytime Entertainment</h3>
+          <p>Groups who've already done the beach and the rooftop bars and want something different for day two. A midday brunch show slots perfectly into a <strong>girls weekend in the Lowcountry</strong> itinerary after a morning at <strong>Waterfront Park on Concord Street</strong> or a <strong>Rainbow Row walk on East Bay Street</strong>.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="info-card mb-4">
+          <span class="card-icon">🗓️</span>
+          <h3>How to Work It Into Your Itinerary</h3>
+          <ul>
+            <li>Morning: Coffee run to <strong>Kudu Coffee on Vanderhorst Street</strong> or <strong>Second State Coffee on Spring Street</strong></li>
+            <li>Mid-morning: Mimosa bar setup at the rental</li>
+            <li>Late morning / noon: Private brunch show with Michael</li>
+            <li>Early afternoon: <strong>Folly Beach or Isle of Palms</strong> beach time, or a <strong>King Street boutique crawl</strong></li>
+            <li>Evening: Dinner downtown — <strong>Husk on Queen Street</strong>, <strong>FIG on Meeting Street</strong>, or a private chef experience</li>
+            <li>Night: <a href="charleston-bachelorettes.html">Live music, rooftop cocktails, or a second private show</a></li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <span class="card-icon">📍</span>
+          <h3>Service Area</h3>
+          <p style="margin-bottom:0.6rem;">Michael serves the entire greater Charleston area including:</p>
+          <ul>
+            <li><strong>Downtown Charleston</strong> – French Quarter, Cannonborough, South of Broad, Harleston Village</li>
+            <li><strong>Folly Beach</strong> – Center Street rentals, beachfront homes off Arctic Avenue</li>
+            <li><strong>Isle of Palms</strong> – Front Beach, Palm Boulevard, Wild Dunes resort area</li>
+            <li><strong>Sullivan's Island</strong> – Station 22½ neighborhood rentals</li>
+            <li><strong>Mount Pleasant</strong> – Shem Creek corridor, Old Village, Towne Centre area</li>
+            <li><strong>James Island</strong> – Short-term rentals near Folly Road</li>
+            <li><strong>North Charleston</strong> – Near the Avenue of Oaks and Park Circle area</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- WHY IT WORKS -->
-  <section class="bg-light py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2>Why Choose Midday Brunch Entertainment in Charleston?</h2>
-          <ul>
-            <li>Perfect daytime option before dinner or nightlife</li>
-            <li>Easy to plan around brunch reservations</li>
-            <li>Great for girls trips and bachelorette weekends</li>
-            <li>Private, comfortable, and group-focused experience</li>
-          </ul>
+<!-- Booking CTA -->
+<section id="book" class="py-5" style="background:#fff5f8;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <div class="book-band">
+          <h2>Book Your Charleston Midday Brunch Show</h2>
+          <p>Ready to add something unforgettable to your brunch plans? Contact Michael directly to check availability and book a private midday entertainment experience anywhere in the greater Charleston area.</p>
+          <div class="phone-big">843-360-9438</div>
+          <p><strong style="color:#fff;">Michael At Your Place · Charleston, SC</strong></p>
           <p>
-            Many groups prefer a midday brunch show because it keeps the
-            celebration light, fun, and stress-free while still creating
-            standout memories.
+            <a href="https://michaelatyourplace.com" target="_blank" rel="noopener" style="color:var(--pink-mid); font-weight:700; font-size:1rem;">michaelatyourplace.com</a>
+          </p>
+          <p>
+            <a class="ig-link" href="https://www.instagram.com/michaelatyourplace/" target="_blank" rel="noopener">
+              📸 View recent performances on Instagram
+            </a>
+          </p>
+          <p style="margin-top:1.2rem;">
+            <a href="https://michaelafterdark.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.6); font-size:0.88rem;">
+              Also available for evening shows → michaelafterdark.com
+            </a>
           </p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- WHO IT'S FOR -->
-  <section class="container py-5">
-    <div class="row">
-      <div class="col">
-        <h2>Perfect For These Charleston Brunch Plans</h2>
-        <ul>
-          <li>Bachelorette brunch in Charleston</li>
-          <li>Girls weekend brunch activity</li>
-          <li>Girls trip daytime entertainment</li>
-          <li>Birthday brunch celebrations</li>
-        </ul>
-        <p>
-          Whether you’re staying downtown, near King Street,
-          or hosting brunch at a rental or private space,
-          this midday brunch activity fits easily into your schedule.
+<!-- Related Pages -->
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="mb-2">More Charleston Bachelorette & Girls Trip Guides</h2>
+        <p style="color:#777; margin-bottom:1.2rem;">Everything you need to plan the perfect Holy City girls weekend.</p>
+        <div class="related-grid">
+          <a class="related-link" href="index.html">🏠 Home</a>
+          <a class="related-link" href="charleston-bachelorettes.html">🥂 Charleston Bach Guide</a>
+          <a class="related-link" href="last-fling-before-the-ring-charleston.html">💍 Low Key Activities</a>
+          <a class="related-link" href="birthday-party-ideas.html">🎂 Birthday Ideas</a>
+          <a class="related-link" href="about.html">💁 About</a>
+        </div>
+        <p class="mt-4" style="font-size:0.9rem; color:#888;">
+          More resources: <a href="https://www.partycharleston.com" target="_blank" rel="noopener">Party Charleston</a> ·
+          <a href="https://www.partycharleston.com/bach-party/bachelorette-brunch-show-charleston-sc.html" target="_blank" rel="noopener">Bachelorette Brunch Show</a>
         </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- BOOKING SECTION -->
-  <section class="bg-dark text-white text-center py-5">
-    <div class="container">
-      <h2 class="mb-3">Book a Charleston Midday Brunch Show</h2>
-      <p class="mb-4">
-        Ready to add something fun and unique to your brunch plans?
-        Book directly for a private midday brunch entertainment experience.
-      </p>
-      <p class="fw-bold mb-1">
-        Michael at Your Place
-      </p>
-      <p class="mb-1">
-        Charleston, SC
-      </p>
-      <p class="mb-3">
-        Call or Text: <strong>843-360-9438</strong>
-      </p>
-      <p>
-        <a href="https://www.instagram.com/michaelatyourplace/" target="_blank" rel="noopener" class="text-white text-decoration-underline">
-          See recent brunch performances on Instagram
-        </a>
-      </p>
-    </div>
-  </section>
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p class="mb-1">© 2026 <a href="index.html">Fling Before The Ring</a> · Charleston, South Carolina</p>
+    <p style="opacity:0.5; font-size:0.8rem; margin:0;">Private brunch entertainment for bachelorette parties, girls trips, and birthday celebrations across the Lowcountry.</p>
+  </div>
+</footer>
 
-</div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

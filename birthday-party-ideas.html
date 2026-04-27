@@ -2,113 +2,566 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Charleston Girls Night Birthday Ideas</title>
-  <meta name="description" content="Charleston girls night birthday ideas including dinner spots, clubbing, private entertainment, and a King Street bar crawl. Perfect for birthdays and girls weekends.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Charleston Girls Night Birthday Ideas | Birthday Party Activities in the Holy City</title>
+  <meta name="description" content="The best Charleston girls night birthday ideas – private entertainment, dinner at Halls Chophouse, King Street bar crawls, clubbing, and more. Plan a birthday girls weekend in Charleston SC.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink-light: #fce4ec;
+      --pink-mid:   #f48fb1;
+      --pink-hot:   #e83e8c;
+      --pink-deep:  #c2185b;
+      --charcoal:   #1f1f1f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', Arial, sans-serif;
+      background: #fffafc;
+      color: #222;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    /* ── Nav ─────────────────────────────────── */
+    .top-nav {
+      background: #fff;
+      border-bottom: 2px solid var(--pink-light);
+      padding: 0.55rem 1.2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .top-nav .brand {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--pink-hot);
+      text-decoration: none;
+    }
+    .top-nav .nav-links a {
+      color: var(--charcoal);
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-decoration: none;
+      margin-left: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .top-nav .nav-links a:hover { color: var(--pink-hot); }
+
+    /* ── Hero ─────────────────────────────────── */
+    .hero {
+      background: linear-gradient(150deg, #fce4ec 0%, #f8bbd0 50%, #f48fb1 100%);
+      padding: 80px 1rem 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "🎂";
+      font-size: 160px;
+      opacity: 0.06;
+      position: absolute;
+      top: -10px; left: -20px;
+      pointer-events: none;
+    }
+    .hero::after {
+      content: "🥳";
+      font-size: 140px;
+      opacity: 0.06;
+      position: absolute;
+      bottom: -20px; right: -10px;
+      pointer-events: none;
+    }
+    .hero .pill {
+      display: inline-block;
+      background: var(--pink-hot);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 18px;
+      border-radius: 30px;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      color: var(--charcoal);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .hero p.lead {
+      font-size: 1.08rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #444;
+    }
+
+    /* ── Idea rows ────────────────────────────── */
+    .idea-row {
+      padding: 60px 0;
+      border-bottom: 1px solid #f2d8e3;
+    }
+    .idea-row:last-of-type { border-bottom: none; }
+    .idea-row.alt-bg { background: #fff5f8; }
+
+    .idea-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--pink-hot), var(--pink-deep));
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+      box-shadow: 0 4px 12px rgba(232,62,140,0.35);
+    }
+    .idea-row h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      margin-bottom: 0.7rem;
+    }
+    .idea-row p { color: #555; }
+    .idea-row ul {
+      padding-left: 1.2rem;
+      color: #555;
+    }
+    .idea-row li { margin-bottom: 0.4rem; }
+
+    /* Image panels */
+    .img-panel {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    }
+    .img-panel img {
+      width: 100%;
+      display: block;
+    }
+    .img-panel .img-caption {
+      background: linear-gradient(135deg, var(--pink-hot), var(--pink-deep));
+      color: #fff;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 0.95rem;
+      padding: 0.75rem 1rem;
+    }
+
+    /* tags */
+    .tag-row { display: flex; flex-wrap: wrap; gap: 5px; margin: 0.8rem 0; }
+    .tag {
+      background: var(--pink-light);
+      color: var(--pink-deep);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    /* cta link */
+    .cta-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: var(--pink-hot);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      border-bottom: 2px solid var(--pink-mid);
+    }
+    .cta-link:hover { color: var(--pink-deep); border-color: var(--pink-deep); }
+
+    /* highlight box */
+    .highlight-box {
+      background: #fff0f5;
+      border-left: 5px solid var(--pink-hot);
+      border-radius: 0 12px 12px 0;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .highlight-box strong { color: var(--pink-deep); }
+    .highlight-box p { margin: 0; font-size: 0.93rem; color: #555; }
+
+    /* phone display */
+    .phone-display {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--charcoal);
+      letter-spacing: 0.03em;
+    }
+
+    /* ── CTA band ─────────────────────────────── */
+    .cta-band {
+      background: linear-gradient(135deg, var(--pink-hot), var(--pink-deep));
+      color: #fff;
+      border-radius: 20px;
+      padding: 2.8rem 2rem;
+      text-align: center;
+      box-shadow: 0 8px 28px rgba(194,24,91,0.25);
+      margin: 3rem 0;
+    }
+    .cta-band h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 0.6rem;
+    }
+    .cta-band p { color: rgba(255,255,255,0.9); margin-bottom: 0.5rem; }
+    .cta-band .phone-big {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.04em;
+      margin: 0.8rem 0;
+    }
+    .btn-white {
+      background: #fff;
+      color: var(--pink-deep);
+      font-weight: 700;
+      padding: 0.75rem 2.2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1rem;
+      display: inline-block;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-white:hover { background: var(--pink-light); transform: scale(1.03); color: var(--pink-deep); }
+
+    /* ── Related grid ─────────────────────────── */
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+      gap: 10px;
+    }
+    .related-link {
+      display: block;
+      background: var(--pink-light);
+      color: var(--pink-deep);
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      text-align: center;
+      border: 1.5px solid var(--pink-mid);
+      transition: background 0.2s, color 0.2s;
+    }
+    .related-link:hover {
+      background: var(--pink-hot);
+      color: #fff;
+      border-color: var(--pink-hot);
+    }
+
+    /* ── Footer ───────────────────────────────── */
+    footer {
+      background: #111;
+      color: rgba(255,255,255,0.65);
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.86rem;
+    }
+    footer a { color: var(--pink-mid); text-decoration: none; }
+    footer a:hover { color: var(--pink-hot); }
+
+    a { color: var(--pink-hot); }
+    a:hover { color: var(--pink-deep); }
+
+    @media (max-width: 576px) {
+      .top-nav .nav-links a { font-size: 0.72rem; margin-left: 0.5rem; }
+    }
+  </style>
 </head>
 <body>
 
-<div class="container py-5">
+<!-- Sticky Nav -->
+<nav class="top-nav">
+  <a class="brand" href="index.html">Fling Before The Ring</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="charleston-bachelorettes.html">Charleston Bach</a>
+    <a href="last-fling-before-the-ring-charleston.html">Activities</a>
+    <a href="brunch-midday-charleston.html">Brunch</a>
+    <a href="about.html">About</a>
+    <a href="https://www.partycharleston.com" target="_blank" rel="noopener">Party Charleston</a>
+  </div>
+</nav>
 
-  <!-- Intro -->
-  <div class="row mb-5">
-    <div class="col text-center">
-      <h1>Girls Night Birthday Ideas Charleston</h1>
-      <p class="mt-3">
-        Planning a birthday girls night out in Charleston? Whether you want something classy,
-        high-energy, or private with close friends, these four ideas keep it simple and memorable.
-      </p>
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="pill">Charleston Birthday Guide</div>
+    <h1>Girls Night Birthday Ideas<br>in Charleston, SC</h1>
+    <p class="lead">
+      Whether you're celebrating a <strong>30th, 40th, or milestone birthday in the Holy City</strong>, these four ideas keep planning simple while giving your crew a night — or a whole weekend — worth remembering. From a private dinner on <strong>King Street</strong> to a private entertainer at your <strong>Folly Beach or Isle of Palms rental</strong>, Charleston delivers for every birthday vibe.
+    </p>
+  </div>
+</section>
+
+<!-- Idea 1: Dinner -->
+<section class="idea-row">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-md-6">
+        <div class="img-panel">
+          <img src="chophouse.png" alt="Birthday dinner in Charleston SC – Halls Chophouse on King Street">
+          <div class="img-caption">Birthday Dinner in the Holy City</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="idea-number">1</div>
+        <h2>Dinner with the Girls</h2>
+        <p>
+          Start the birthday night at a proper table with good food, better drinks, and everyone dressed up. Charleston's dining scene runs deep — here are two go-to picks for a birthday girls night dinner on the downtown peninsula:
+        </p>
+
+        <div class="highlight-box">
+          <p><strong>Halls Chophouse — 434 King Street</strong><br>
+          One of Charleston's most celebrated steakhouses, right on <strong>Upper King Street</strong>. Known for its energetic atmosphere, singing servers, and the kind of table energy that makes a birthday feel like an event. Call <strong>(843) 727-0090</strong> and book well ahead for weekend nights.</p>
+        </div>
+
+        <div class="highlight-box">
+          <p><strong>Bodega — 23 Ann Street, Charleston, SC 29403</strong><br>
+          A hidden gem tucked just off <strong>Ann Street near the Cannonborough-Elliotborough neighborhood</strong>. Known for its taco-and-mezcal energy, colorful interior, and the kind of casual-fun vibe that works perfectly as a birthday dinner before a big night out on <strong>King Street</strong>.</p>
+        </div>
+
+        <div class="tag-row">
+          <span class="tag">Upper King Street</span>
+          <span class="tag">Ann Street</span>
+          <span class="tag">Dinner Before Nightlife</span>
+          <span class="tag">Cannonborough</span>
+        </div>
+
+        <p style="margin-top:1rem;">Also worth considering: <strong>Husk on Queen Street</strong> for Southern cuisine in a restored Victorian mansion, <strong>The Macintosh on King Street</strong> for a lively gastropub atmosphere, and <strong>Indaco on King Street</strong> for wood-fired Italian in a polished industrial space.</p>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- Idea 1 -->
-  <div class="row mb-5 align-items-center">
-    <div class="col-md-6 mb-3 mb-md-0">
-        <img src="chophouse.png" class="img-fluid" alt="">
-        <div class="bg-light text-center py-5">Birthday Dinner in Charleston</div>
-    </div>
-    <div class="col-md-6">
-      <h2>Dinner with the Girls</h2>
-      <p>
-        Start the night with a birthday dinner where everyone can dress up, relax,
-        and kick off the celebration together. Charleston has plenty of fun,
-        social dining spots perfect for a girls night out.
-      </p>
-      <ul>
-        <li>Halls Chophouse (8437270090)</li>
-        <li>Bodegas - 23 Ann St, Charleston, SC 29403</li>
-      </ul>
+<!-- Idea 2: Clubbing -->
+<section class="idea-row alt-bg">
+  <div class="container">
+    <div class="row align-items-center g-5 flex-md-row-reverse">
+      <div class="col-md-6">
+        <div class="img-panel">
+          <img src="republic.png" alt="Charleston nightclub birthday – Republic Garden & Lounge on King Street">
+          <div class="img-caption">Charleston Nightlife on King Street</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="idea-number">2</div>
+        <h2>Clubbing & Dancing on King Street</h2>
+        <p>
+          After dinner, the <strong>King Street corridor between Calhoun Street and Spring Street</strong> is where Charleston's birthday night energy lives. Two top options for a birthday girls night out:
+        </p>
+
+        <div class="highlight-box">
+          <p><strong>Republic Garden & Lounge — 462 King Street</strong><br>
+          One of Charleston's most established nightlife venues. VIP bottle service available — book ahead if you want a reserved table for the birthday group. Expect a line on Friday and Saturday nights. Located near the <strong>Upper King and Calhoun Street intersection</strong>.</p>
+        </div>
+
+        <div class="highlight-box">
+          <p><strong>Uptown Social — 587 King Street</strong><br>
+          A rooftop bar and lounge near the <strong>Spring Street end of Upper King</strong>, with open-air views and a more social, cocktail-forward atmosphere. A good first stop before heading further down King toward Republic. No hard-to-get reservation required for most nights.</p>
+        </div>
+
+        <div class="tag-row">
+          <span class="tag">King Street Nightlife</span>
+          <span class="tag">Calhoun Street</span>
+          <span class="tag">Spring Street</span>
+          <span class="tag">VIP Bottle Service</span>
+          <span class="tag">Rooftop Bar</span>
+        </div>
+
+        <p style="margin-top:1rem; font-size:0.93rem; color:#666;">
+          <strong>Pro tip:</strong> Start at Uptown Social (north end of King near Spring Street) and walk south toward Republic as the night builds. The <strong>King and Calhoun intersection</strong> is the natural midpoint. Rideshare pickup and drop-off is easy all along this stretch.
+        </p>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- Idea 2 -->
-  <div class="row mb-5 align-items-center flex-md-row-reverse">
-    <div class="col-md-6 mb-3 mb-md-0">
-        <img src="republic.png" class="img-fluid" alt="">
-        <div class="bg-light text-center py-5">Charleston Nightclub Scene</div>
-    </div>
-    <div class="col-md-6">
-      <h2>Clubbing & Dancing</h2>
-      <p>
-        If dancing is a must, head out after dinner and enjoy Charleston’s nightlife.
-        These spots are popular for birthdays and girls night celebrations. There maybe a line per when you go.
-      </p>
-      <ul>
-        <li>Republic Lounge - 462 King St</li>
-        <li>Uptown Social - 587 King St</li>
-      </ul>
+<!-- Idea 3: Private Entertainment -->
+<section class="idea-row">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-md-6">
+        <div class="img-panel">
+          <img src="michael.png" alt="Private birthday entertainment Charleston – Michael At Your Place">
+          <div class="img-caption">Private Birthday Experience</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="idea-number">3</div>
+        <h2>Private Birthday Entertainment</h2>
+        <p>
+          For groups that want something more personal and exclusive, booking a private entertainer keeps the birthday celebration entirely in your own space. <a href="https://michaelatyourplace.com" target="_blank" rel="noopener"><strong>Michael At Your Place</strong></a> travels to your rental or private venue anywhere in the greater Charleston area — from a <strong>downtown Airbnb on Tradd Street or Broad Street</strong> to a <strong>Folly Beach vacation rental off Center Street</strong> to an <strong>Isle of Palms beach house on Palm Boulevard</strong>.
+        </p>
+        <p>
+          This option works perfectly as the centerpiece of a birthday night before heading out — or as the main event for groups who'd rather keep the celebration private. It's one of the <a href="last-fling-before-the-ring-charleston.html">most talked-about activities for girls weekends</a> across the Lowcountry, and it works equally well for milestone birthdays as it does for bachelorette parties.
+        </p>
+
+        <div class="highlight-box">
+          <p>
+            <strong>Michael At Your Place · Charleston, SC</strong><br>
+            Serves downtown Charleston, Folly Beach, Isle of Palms, Sullivan's Island, Mount Pleasant, and James Island.<br>
+            <span class="phone-display">843-360-9438</span><br>
+            <a href="https://michaelatyourplace.com" target="_blank" rel="noopener">michaelatyourplace.com</a> ·
+            <a href="https://www.instagram.com/michaelatyourplace/" target="_blank" rel="noopener">Instagram</a>
+          </p>
+        </div>
+
+        <div class="tag-row">
+          <span class="tag">Private Show</span>
+          <span class="tag">Comes To You</span>
+          <span class="tag">Folly Beach</span>
+          <span class="tag">Isle of Palms</span>
+          <span class="tag">Milestone Birthday</span>
+        </div>
+
+        <a class="cta-link" href="brunch-midday-charleston.html">Also available as a midday brunch show →</a>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- Idea 3 -->
-  <div class="row mb-5 align-items-center">
-    <div class="col-md-6 mb-3 mb-md-0">
-        <img src="michael.png" class="img-fluid" alt="">
-      <div class="bg-light text-center py-5">Private Birthday Experience</div>
-    </div>
-    <div class="col-md-6">
-      <h2>Private Birthday Entertainment</h2>
-      <p>
-        For groups that want something more personal, booking private birthday entertainment
-        keeps the celebration exclusive and easy. This option works well before heading out
-        or as the main event of the night.
-      </p>
-      <p>
-        <strong>Michael at Your Place Charleston</strong><br>
-        Book direct by call or text: <strong>843-360-9438</strong>
-      </p>
+<!-- Idea 4: Bar Crawl -->
+<section class="idea-row alt-bg">
+  <div class="container">
+    <div class="row align-items-center g-5 flex-md-row-reverse">
+      <div class="col-md-6">
+        <div class="img-panel">
+          <img src="kingst.png" alt="King Street bar crawl Charleston SC – self-guided birthday night out">
+          <div class="img-caption">King Street Bar Crawl</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="idea-number">4</div>
+        <h2>King Street Self-Guided Bar Crawl</h2>
+        <p>
+          For a birthday plan that moves at the group's own pace, a self-guided crawl along <strong>King Street</strong> is the most flexible option. Start at the north end near <strong>Uptown Social at 587 King Street</strong> and work your way south through cocktail bars, lounges, and late-night spots down to the <strong>King and Calhoun Street intersection</strong> and beyond.
+        </p>
+
+        <p>Stops worth building into the crawl:</p>
+        <ul>
+          <li><strong>Uptown Social (587 King)</strong> — open-air rooftop start, cocktail-forward crowd</li>
+          <li><strong>The Gin Joint (182 East Bay Street)</strong> — craft cocktails in the French Quarter, a local's go-to</li>
+          <li><strong>Proof Bar (437 King Street)</strong> — relaxed, sophisticated, good for lingering</li>
+          <li><strong>Republic Garden & Lounge (462 King)</strong> — nightclub energy when the group is ready to dance</li>
+          <li><strong>The Commodore (on Spring Street near Upper King)</strong> — vintage-cool bar with live music and a great late-night atmosphere</li>
+        </ul>
+
+        <div class="tag-row">
+          <span class="tag">Upper King Street</span>
+          <span class="tag">East Bay Street</span>
+          <span class="tag">French Quarter</span>
+          <span class="tag">Self-Guided</span>
+          <span class="tag">Live Music</span>
+        </div>
+
+        <p style="margin-top:1rem; font-size:0.93rem; color:#666;">
+          King Street is highly walkable — the stretch from <strong>Spring Street to Market Street</strong> is about half a mile. Wear comfortable shoes, use rideshare for the trip home, and keep tabs open so no one loses the group at last call.
+        </p>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- Idea 4 -->
-  <div class="row mb-5 align-items-center flex-md-row-reverse">
-    <div class="col-md-6 mb-3 mb-md-0">
-        <img src="kingst.png" class="img-fluid" alt="">
-        <div class="bg-light text-center py-5">King Street Bar Crawl</div>
-    </div>
-    <div class="col-md-6">
-      <h2>King Street Self-Guided Bar Crawl</h2>
-      <p>
-        For a laid-back but fun birthday plan, a self-guided King Street bar crawl
-        lets you move at your own pace with close friends. Start at one end of King Street
-        and hop between cocktail bars, lounges, and late-night spots.
-      </p>
-      <p>Just start at uptown social and walk down to King and Calhoun</p>
+<!-- Bonus Ideas -->
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700; text-align:center;" class="mb-4">More Charleston Birthday Ideas Worth Considering</h2>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div style="background:#fff; border:1.5px solid #f2d8e3; border-radius:12px; padding:1.2rem;">
+              <strong style="color:var(--pink-deep);">🛁 Spa Day at The Dewberry</strong>
+              <p style="font-size:0.9rem; color:#555; margin:0.4rem 0 0;">The Spa at The Dewberry on <strong>Meeting Street near Marion Square</strong> offers luxury treatments using Lowcountry botanicals. Ideal morning-of pampering before a birthday dinner.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div style="background:#fff; border:1.5px solid #f2d8e3; border-radius:12px; padding:1.2rem;">
+              <strong style="color:var(--pink-deep);">🥞 Birthday Brunch Show</strong>
+              <p style="font-size:0.9rem; color:#555; margin:0.4rem 0 0;">Start the birthday with a private midday show from <a href="brunch-midday-charleston.html">Michael At Your Place</a> — perfect before an afternoon on <strong>Folly Beach or Isle of Palms</strong>.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div style="background:#fff; border:1.5px solid #f2d8e3; border-radius:12px; padding:1.2rem;">
+              <strong style="color:var(--pink-deep);">⛵ Sunset Sail from Shem Creek</strong>
+              <p style="font-size:0.9rem; color:#555; margin:0.4rem 0 0;">A BYOB 2-hour catamaran sail from <strong>Shem Creek in Mount Pleasant</strong> is a genuinely special birthday treat — relaxed, scenic, and memorable.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div style="background:#fff; border:1.5px solid #f2d8e3; border-radius:12px; padding:1.2rem;">
+              <strong style="color:var(--pink-deep);">🕯️ Candle Making on King Street</strong>
+              <p style="font-size:0.9rem; color:#555; margin:0.4rem 0 0;"><a href="last-fling-before-the-ring-charleston.html">Candlefish on Upper King Street</a> offers private BYOB workshops — a relaxed afternoon activity before the birthday night starts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- Closing -->
-  <div class="row">
-    <div class="col text-center">
-      <p>
-        These Charleston girls night birthday ideas keep planning simple while giving
-        you plenty of ways to celebrate in style with your favorite people.
-      </p>
-    </div>
+<!-- CTA Band -->
+<div class="container">
+  <div class="cta-band">
+    <h2>Book Private Birthday Entertainment in Charleston</h2>
+    <p>Michael At Your Place travels to your rental — downtown, Folly Beach, Isle of Palms, Mount Pleasant, and beyond.</p>
+    <div class="phone-big">843-360-9438</div>
+    <a href="https://michaelatyourplace.com" class="btn-white" target="_blank" rel="noopener">michaelatyourplace.com</a>
   </div>
-
 </div>
 
+<!-- Related Pages -->
+<section class="py-5" style="background:#fff5f8;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="mb-2">More Charleston Girls Night Guides</h2>
+        <p style="color:#777; margin-bottom:1.2rem;">Everything you need for the perfect Holy City girls weekend.</p>
+        <div class="related-grid">
+          <a class="related-link" href="index.html">🏠 Home</a>
+          <a class="related-link" href="charleston-bachelorettes.html">🥂 Charleston Bach Guide</a>
+          <a class="related-link" href="last-fling-before-the-ring-charleston.html">💍 Low Key Activities</a>
+          <a class="related-link" href="brunch-midday-charleston.html">🥞 Brunch Show</a>
+          <a class="related-link" href="about.html">💁 About</a>
+        </div>
+        <p class="mt-4" style="font-size:0.9rem; color:#888;">
+          More resources: <a href="https://www.partycharleston.com" target="_blank" rel="noopener">Party Charleston</a> ·
+          <a href="https://michaelafterdark.com" target="_blank" rel="noopener">Michael After Dark</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p class="mb-1">© 2026 <a href="index.html">Fling Before The Ring</a> · Charleston, South Carolina</p>
+    <p style="opacity:0.5; font-size:0.8rem; margin:0;">Charleston girls night birthday ideas, private entertainment, and Holy City celebration guides.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
