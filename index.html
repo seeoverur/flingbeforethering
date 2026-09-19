@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Last Fling Before The Ring Charleston </title>
-    <meta name="description" content="The best low key last fling before the ring ideas in Charleston SC. From King Street candle making to private entertainers, Shem Creek sunsets, and Folly Beach mornings – plan the perfect post bridal rehearsal weekend in the Lowcountry.">
+    <title>The Last Fling The Ring Charleston SC</title>
+    <meta name="description" content="The best low key last fling before the ring ideas in Charleston SC. From King Street candle making to Shem Creek sunsets, and Folly Beach mornings – plan the perfect post bridal rehearsal weekend in the Lowcountry.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
@@ -105,75 +105,44 @@
         }
         .intro-section p { margin: 0; font-size: 1.05rem; color: #444; }
 
-        /* ── Activity cards ───────────────────── */
-        .activity-card {
+        /* ── Itinerary Cards ──────────────────── */
+        .itinerary-day-card {
             background: #fff;
             border: none;
             border-radius: 14px;
             box-shadow: 0 4px 18px rgba(0,0,0,0.06);
             margin-bottom: 28px;
-            transition: transform 0.22s, box-shadow 0.22s;
             overflow: hidden;
         }
-        .activity-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 32px rgba(232,62,140,0.15);
-        }
-        .card-body-inner { padding: 1.6rem 1.8rem 1.4rem; }
-
-        .activity-header {
-            display: flex;
-            align-items: flex-start;
-            gap: 14px;
-            margin-bottom: 0.85rem;
-        }
-        .activity-number {
+        .itinerary-header {
             background: linear-gradient(135deg, var(--pink-hot), var(--pink-deep));
             color: #fff;
-            min-width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1rem;
-            flex-shrink: 0;
-            box-shadow: 0 3px 10px rgba(232,62,140,0.35);
-        }
-        .activity-card h3 {
+            padding: 1rem 1.8rem;
             font-family: 'Playfair Display', serif;
-            font-size: 1.25rem;
-            color: var(--charcoal);
-            margin: 0;
-            line-height: 1.3;
+            font-size: 1.3rem;
         }
-        .activity-card p { color: #555; margin-bottom: 0.9rem; }
-
-        .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 0.5rem; }
-        .tag {
-            background: var(--pink-light);
+        .itinerary-body {
+            padding: 1.6rem 1.8rem;
+        }
+        .itinerary-item {
+            margin-bottom: 1.2rem;
+        }
+        .itinerary-item:last-child {
+            margin-bottom: 0;
+        }
+        .itinerary-time {
+            font-weight: 700;
             color: var(--pink-deep);
-            font-size: 0.72rem;
-            font-weight: 600;
-            padding: 3px 10px;
-            border-radius: 20px;
-            letter-spacing: 0.03em;
+            font-size: 0.85rem;
             text-transform: uppercase;
+            letter-spacing: 0.03em;
+            margin-bottom: 0.2rem;
         }
-
-        .cta-link {
-            display: inline-block;
-            margin-top: 0.7rem;
-            color: var(--pink-hot);
-            font-weight: 600;
-            font-size: 0.9rem;
-            text-decoration: none;
-            border-bottom: 2px solid var(--pink-mid);
-            padding-bottom: 1px;
-            transition: color 0.2s, border-color 0.2s;
+        .itinerary-item p {
+            color: #555;
+            margin: 0;
+            font-size: 0.98rem;
         }
-        .cta-link:hover { color: var(--pink-deep); border-color: var(--pink-deep); }
 
         /* ── Section dividers ─────────────────── */
         .section-label {
@@ -190,36 +159,6 @@
             border-radius: 30px;
             letter-spacing: 0.04em;
         }
-
-        /* ── CTA Box ──────────────────────────── */
-        .cta-box {
-            background: linear-gradient(135deg, var(--pink-hot), var(--pink-deep));
-            border-radius: 16px;
-            padding: 2.2rem;
-            text-align: center;
-            color: #fff;
-            margin: 3rem 0;
-            box-shadow: 0 8px 28px rgba(194,24,91,0.25);
-        }
-        .cta-box h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.7rem;
-            margin-bottom: 0.6rem;
-            color: #fff;
-        }
-        .cta-box p { color: rgba(255,255,255,0.9); margin-bottom: 1.2rem; }
-        .cta-box a {
-            background: #fff;
-            color: var(--pink-deep);
-            font-weight: 700;
-            padding: 0.7rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 1rem;
-            display: inline-block;
-            transition: background 0.2s, transform 0.2s;
-        }
-        .cta-box a:hover { background: var(--pink-light); transform: scale(1.04); }
 
         /* ── Related pages strip ──────────────── */
         .related-pages {
@@ -259,6 +198,47 @@
             border-color: var(--pink-hot);
         }
 
+        /* ── Theme Cards ──────────────────────── */
+        .theme-card {
+            background: #fff;
+            border: none;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+            margin-bottom: 24px;
+            transition: transform 0.22s, box-shadow 0.22s;
+            overflow: hidden;
+            height: 100%;
+        }
+        .theme-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 28px rgba(232,62,140,0.14);
+        }
+        .theme-body {
+            padding: 1.5rem;
+        }
+        .theme-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: var(--charcoal);
+            margin-bottom: 0.6rem;
+        }
+        .theme-card p {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 0.5rem; }
+        .tag {
+            background: var(--pink-light);
+            color: var(--pink-deep);
+            font-size: 0.72rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 20px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+
         /* ── Footer ───────────────────────────── */
         .site-footer {
             background: var(--charcoal);
@@ -276,7 +256,6 @@
         a:hover { color: var(--pink-deep); }
 
         @media (max-width: 576px) {
-            .card-body-inner { padding: 1.2rem 1.1rem; }
             .inner-nav a { display: inline-block; margin: 2px 4px; font-size: 0.75rem; }
         }
     </style>
@@ -295,8 +274,13 @@
 <!-- Hero -->
 <div class="hero">
     <div class="container">
-        <h1>Charleston Post Bridal Party </h1>
+        <h1>Fling Before The Ring Charleston SC</h1>
         <img src="charlestonbach.png" alt="post bridal rehearsal party activities Charleston SC – last fling before the ring in the Lowcountry">
+          <!-- Quick Tips Box -->
+            <div class="intro-section mt-4">
+                <p><strong>Planning Tips for Your Charleston Last Fling:</strong> Best weather runs <strong>March–May and September–November</strong> — spring means cooler temps and blooming gardens; fall means festivals and fewer tourists. Most downtown Charleston Airbnbs and vacation rentals are within walking distance of <strong>Upper King Street, the French Quarter, and the Charleston City Market</strong>. For beach stays, <strong>Isle of Palms rentals near Palm Boulevard</strong> work well for larger groups of 10–15. Rideshare (Uber/Lyft) from IOP to downtown runs about 25 minutes. <a href="https://www.partycharleston.com/bach-party/bachelorette-brunch-show-charleston-sc.html" target="_blank" rel="noopener">See our live brunch show recommendation</a> for a unique daytime option, or check <a href="https://www.partycharleston.com" target="_blank" rel="noopener">Party Charleston</a> for additional local event resources.</p>
+            </div>
+
     </div>
 </div>
 
@@ -307,354 +291,126 @@
             <!-- Intro -->
             <div class="intro-section">
                 <p>
-                    Charleston SC is full of brides to be and the top destinations on the East Coast—and it's not hard to see why. The Holy City offers a perfect mix of antebellum charm, Lowcountry flavors, walkable King Street boutiques, and warm Atlantic beaches all within thirty minutes of each other. 
+                    Fling before the ring Charleston SC is one of the top destinations on the East Coast—and it's not hard to see why. The Holy City offers a perfect mix of antebellum charm, Lowcountry flavors, walkable King Street boutiques, and warm Atlantic beaches all within thirty minutes of each other. 
                 </p>
             </div>
 
-            <!-- DAYTIME ACTIVITIES -->
-            <div class="section-label"><span>✨ Daytime Activities</span></div>
+            <!-- Sample Itinerary Section -->
+            <div class="section-label">
+                <span>Weekend Sample Itinerary</span>
+            </div>
 
-
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">1</div>
-                        <h3>Private Entertainer – <a href="https://michaelatyourplace.com" style="color:var(--pink-hot)">Michael At Your Place</a></h3>
+            <!-- Day 1 -->
+            <div class="itinerary-day-card">
+                <div class="itinerary-header">Day 1: Arrival & Historic Downtown Vibe</div>
+                <div class="itinerary-body">
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">3:00 PM — Check-In & Unwind</div>
+                        <p>Arrive and settle into your rental. Unpack, pop some bubbly, and distribute custom welcome bags filled with local goodies.</p>
                     </div>
-                    <p>
-                        For the group that wants a high-energy, unforgettable night without fighting for space in a downtown club, <a href="https://michaelatyourplace.com">Michael At Your Place</a> is the go-to private entertainer for post bridal rehearsal parties across the Charleston area — from <strong>Folly Beach vacation rentals</strong> to <strong>Isle of Palms beach houses</strong> to private suites in <strong>downtown Charleston's French Quarter</strong>. The show comes directly to your rental or venue, giving you a fully personalized experience on your own schedule. It's consistently one of the most talked-about activities among brides celebrating their <em>last fling before the ring in Charleston</em>.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">Private Entertainment</span>
-                        <span class="tag">Comes to You</span>
-                        <span class="tag">Folly Beach</span>
-                        <span class="tag">Isle of Palms</span>
-                        <span class="tag">Downtown Rentals</span>
+                    <hr class="my-3 text-muted opacity-25">
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">5:30 PM — Golden Hour Stroll</div>
+                        <p>Take a leisurely stroll down King Street and head toward the historic French Quarter. Snap group photos in front of the pastel townhomes and Rainbow Row.</p>
                     </div>
-                    <a class="cta-link" href="https://michaelatyourplace.com" target="_blank" rel="noopener">Book Michael At Your Place →</a>
+                    <hr class="my-3 text-muted opacity-25">
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">8:00 PM — Welcome Dinner</div>
+                        <p>Enjoy a vibrant group dinner featuring fresh Lowcountry seafood, shrimp and grits, and cocktails at a trendy Upper King hotspot.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- 2. Candlefish -->
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">2</div>
-                        <h3>Candle Making at Candlefish on King Street</h3>
+            <!-- Day 2 -->
+            <div class="itinerary-day-card">
+                <div class="itinerary-header">Day 2: Coastal Views & Celebration</div>
+                <div class="itinerary-body">
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">10:00 AM — Brunch & Show</div>
+                        <p>Kick off the morning with a high-energy group brunch or check out <a href="https://www.partycharleston.com/bach-party/bachelorette-brunch-show-charleston-sc.html" target="_blank" rel="noopener">recommended local daytime brunch experiences</a>.</p>
                     </div>
-                    <p>
-                        <a href="https://www.candlefishco.com" target="_blank" rel="noopener">Candlefish</a>, located on <strong>King Street near the Upper King design district</strong>, is one of Charleston's most beloved boutique experiences for post bridal rehearsal groups. Their private candle-making workshops are BYOB — meaning you can bring your rosé and spend two hours exploring a library of over 100 scents while pouring custom candles to take home. It's the kind of tactile, conversational activity that naturally sparks toasts and storytelling. Groups up to 20 can reserve the private event space. Prefer a fragrance twist? <a href="https://tijonperfumebar.com" target="_blank" rel="noopener">Tijon Fragrance Lab</a> on middle King Street offers custom perfume blending with 300+ oils — a uniquely personal keepsake for the bride-to-be.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">King Street</span>
-                        <span class="tag">BYOB Workshop</span>
-                        <span class="tag">Group-Friendly</span>
-                        <span class="tag">Private Event Space</span>
+                    <hr class="my-3 text-muted opacity-25">
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">1:30 PM — Beach Time or Shem Creek</div>
+                        <p>Head out to Folly Beach or Isle of Palms to soak up some sun on the sand, or grab cold drinks on the waterfront deck overlooking the marsh at Shem Creek.</p>
                     </div>
-                    <a class="cta-link" href="https://www.candlefishco.com" target="_blank" rel="noopener">Book at Candlefish →</a>
+                    <hr class="my-3 text-muted opacity-25">
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">7:30 PM — Night Out on Upper King</div>
+                        <p>Hit the town for live music, dancing, and custom cocktail spots along Upper King Street's vibrant nightlife corridor.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- 3. Rainbow Row + Battery Walk -->
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">3</div>
-                        <h3>Rainbow Row, The Battery & White Point Garden Photo Walk</h3>
+            <!-- Day 3 -->
+            <div class="itinerary-day-card">
+                <div class="itinerary-header">Day 3: Farewell Lowcountry</div>
+                <div class="itinerary-body">
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">9:30 AM — Recovery Breakfast</div>
+                        <p>Fuel up with local pastries, coffee, or a casual neighborhood breakfast spot to debrief the weekend's highlights.</p>
                     </div>
-                    <p>
-                        The iconic row of thirteen Georgian houses painted in candy pastels at <strong>83–107 East Bay Street</strong> is ground zero for post bridal rehearsal photos in Charleston. From Rainbow Row, walk south along East Bay to <strong>Waterfront Park</strong> with its famous pineapple fountain — another must-photo stop — then continue to <strong>The Battery</strong>, a Civil War-era seawall lined by grand antebellum mansions draped in Spanish moss. End at <strong>White Point Gardens</strong> for a shaded picnic under ancient live oaks. This entire walk is less than a mile and totally free. Pro tip: go before 9am on a weekend morning for golden light and zero crowds — then reward the group with biscuits from <a href="https://www.hogansbiscuits.com" target="_blank" rel="noopener">Hogan's on East Bay</a>.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">East Bay Street</span>
-                        <span class="tag">Free Activity</span>
-                        <span class="tag">Photo Ops</span>
-                        <span class="tag">Waterfront Park</span>
-                        <span class="tag">The Battery</span>
+                    <hr class="my-3 text-muted opacity-25">
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">11:30 AM — Checkout & Goodbyes</div>
+                        <p>Pack up your bags, grab one last look at the historic Charleston architecture, and head home with unforgettable memories!</p>
                     </div>
-                    <a class="cta-link" href="charleston-bachelorette-party.html">More Charleston Bach Ideas →</a>
                 </div>
             </div>
 
-            <!-- 3. King Street Shopping Tour -->
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">3</div>
-                        <h3>King Street Boutique Shopping Crawl</h3>
+            <!-- Party Themes Section -->
+            <div class="section-label">
+                <span>Popular Charleston Party Themes</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="theme-card">
+                        <div class="theme-body">
+                            <h3>🌸 Lowcountry Garden Chic</h3>
+                            <p>Soft pastel pinks, floral prints, gingham patterns, and sweet tea vibes. Perfect for brunch setups and historic courtyard photoshoots.</p>
+                            <div class="tag-row">
+                                <span class="tag">Pastels</span>
+                                <span class="tag">Bow Accents</span>
+                            </div>
+                        </div>
                     </div>
-                    <p>
-                        Upper King Street between <strong>Spring Street and Calhoun Street</strong> is one of the most walkable shopping corridors in the South. Kick off at <strong>Kenny Flowers</strong> (345 King) for post bridal rehearsal dresses, swimwear, and their rooftop Cabana Club deck you can rent for the whole group — bottles of rosé included. Work your way south through <strong>Savannah Bee Co.</strong> for mead tastings, boutiques like Worthwhile, and straight into <strong>the historic French Quarter</strong> district. For a guided version with complimentary wine and boutique discounts at every stop, look into the King Street Shopping Tour starting at <strong>The Watch rooftop</strong> on Wentworth Street — a two-hour tasting and shopping experience that practically pays for itself.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">Upper King Street</span>
-                        <span class="tag">French Quarter</span>
-                        <span class="tag">Shopping</span>
-                        <span class="tag">Wine & Boutiques</span>
-                    </div>
-                    <a class="cta-link" href="birthday-party-ideas.html">See Birthday Ideas Too →</a>
                 </div>
-            </div>
-
-            <!-- 4. Beach Day -->
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">4</div>
-                        <h3>Beach Day: Isle of Palms, Folly Beach, or Sullivan's Island</h3>
+                <div class="col-md-6">
+                    <div class="theme-card">
+                        <div class="theme-body">
+                            <h3>🌊 Folly &amp; Sun Coastal</h3>
+                            <p>Beach towels, retro sunglasses, coastal stripes, and sunset cocktails. Ideal for groups planning a day on Isle of Palms or Folly Beach.</p>
+                            <div class="tag-row">
+                                <span class="tag">Beach Vibe</span>
+                                <span class="tag">Sunset Drinks</span>
+                            </div>
+                        </div>
                     </div>
-                    <p>
-                        The Lowcountry has three distinct beach personalities within 30 minutes of downtown. <strong>Isle of Palms</strong> (via the Connector off US-17) is the upscale resort vibe — Wild Dunes beach houses, calm Atlantic swells, and access to <strong>IOP's Front Beach</strong> with its strip of casual bars and taco joints. <strong>Folly Beach</strong> off <strong>Folly Road (SC-171)</strong> is funky, artsy, and fiercely local — check the <a href="https://www.cityoffollybeach.com" target="_blank" rel="noopener">Folly Beach calendar</a> for weekend music festivals that often coincide with bach weekends. <strong>Sullivan's Island</strong> is the most laid-back of the three — no high-rises, no chain restaurants, just wide sandy shores and low-key beach bars near <strong>Station 22½</strong>. All three offer chair and umbrella rentals ideal for a full girls' day in the sun.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">Isle of Palms</span>
-                        <span class="tag">Folly Beach</span>
-                        <span class="tag">Sullivan's Island</span>
-                        <span class="tag">Lowcountry Beaches</span>
-                    </div>
-                    <a class="cta-link" href="https://www.townofiolpalms.com" target="_blank" rel="noopener">Isle of Palms Info →</a>
                 </div>
-            </div>
-
-            <!-- 5. Shem Creek / Waterfront -->
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">5</div>
-                        <h3>Shem Creek Waterfront Afternoon in Mount Pleasant</h3>
+                <div class="col-md-6">
+                    <div class="theme-card">
+                        <div class="theme-body">
+                            <h3>🤠 Boots &amp; Bubbly</h3>
+                            <p>Cowboy boots paired with chic party dresses or denim jackets. A fun blend of southern rustic charm and high-energy nightlife.</p>
+                            <div class="tag-row">
+                                <span class="tag">Cowboy Boots</span>
+                                <span class="tag">Champagne</span>
+                            </div>
+                        </div>
                     </div>
-                    <p>
-                        Just across the <strong>Arthur Ravenel Jr. Bridge</strong> in <strong>Mount Pleasant</strong>, Shem Creek is the Lowcountry's quintessential waterfront hangout. The boardwalk along <strong>Mill Street</strong> threads past working shrimp boats and a lineup of waterfront restaurants — <strong>Tavern & Table</strong> for pimento cheese and oysters Rockefeller, <strong>Red's Ice House</strong> for casual beers and sports TV on the dock, and <strong>The Rusty Rudder</strong> for frozen drinks with pelicans overhead. Pair this with a <a href="https://palmettobreezecat.com" target="_blank" rel="noopener">Palmetto Breeze sailing charter</a> that departs from Shem Creek — a 2-hour sunset catamaran sail with BYOB is one of the most genuinely romantic low-key experiences in the area.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">Shem Creek</span>
-                        <span class="tag">Mount Pleasant</span>
-                        <span class="tag">Waterfront Dining</span>
-                        <span class="tag">Sunset Sail</span>
-                    </div>
-                    <a class="cta-link" href="https://palmettobreezecat.com" target="_blank" rel="noopener">Book a Sunset Sail →</a>
                 </div>
-            </div>
-
-            <!-- 6. Magnolia Plantation -->
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">6</div>
-                        <h3>Magnolia Plantation & Gardens or Middleton Place</h3>
+                <div class="col-md-6">
+                    <div class="theme-card">
+                        <div class="theme-body">
+                            <h3>🌙 Historic Holy City Nights</h3>
+                            <p>Classic little black dresses, pearl accessories, and sleek evening aesthetics suited for upscale dinners along King Street.</p>
+                            <div class="tag-row">
+                                <span class="tag">Chic &amp; Sleek</span>
+                                <span class="tag">Upper King</span>
+                            </div>
+                        </div>
                     </div>
-                    <p>
-                        For the bride who loves Southern Gothic beauty, <a href="https://www.magnoliaplantation.com" target="_blank" rel="noopener">Magnolia Plantation & Gardens</a> on <strong>Ashley River Road (SC-61)</strong> is unlike anything else in the Lowcountry. America's oldest public garden features cypress swamp canoe trails, an alligator observation area, peacocks, and explosions of azalea and wisteria color depending on the season. Just south, <strong>Middleton Place</strong> offers the oldest landscaped gardens in the United States along the same Ashley River corridor — perfect for a long, rambling afternoon. Both spots are 20 minutes from downtown via <strong>US-17 to SC-61</strong> and make for stunning, relatively uncrowded photo backdrops for a post bridal rehearsal group.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">Ashley River Road</span>
-                        <span class="tag">Historic Plantations</span>
-                        <span class="tag">Nature & Gardens</span>
-                        <span class="tag">Lowcountry Landscapes</span>
-                    </div>
-                    <a class="cta-link" href="https://www.magnoliaplantation.com" target="_blank" rel="noopener">Visit Magnolia Plantation →</a>
-                </div>
-            </div>
-
-            <!-- EVENING / NIGHTTIME -->
-            <div class="section-label"><span>🌙 Evening & Night Activities</span></div>
-
-           
-
-            <!-- 8. Ghost Tour -->
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">8</div>
-                        <h3>Ghost & Haunted History Tour – Old South Carriage or Bulldog Tours</h3>
-                    </div>
-                    <p>
-                        Few American cities do ghost tours as authentically as Charleston. The peninsula is literally built on centuries of history — much of it dark — and the stories that surface on a good nighttime tour will have your group genuinely spooked. <a href="https://www.oldsouthcarriage.com" target="_blank" rel="noopener">Old South Carriage Company</a> on <strong>Anson Street</strong> offers evening ghost carriage rides through the <strong>Ansonborough and Harleston Village neighborhoods</strong>, narrated by costumed guides who weave documented history with chilling folklore. <a href="https://bulldogtours.com" target="_blank" rel="noopener">Bulldog Tours</a> on <strong>North Market Street</strong> is another top pick for walking ghost tours through the old <strong>City Market area</strong> and <strong>Church Street</strong> corridor. Both are 90 minutes of entertainment requiring zero physical exertion — perfect for groups in heels.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">Ansonborough</span>
-                        <span class="tag">Church Street</span>
-                        <span class="tag">Night Activity</span>
-                        <span class="tag">Walking Tour</span>
-                        <span class="tag">City Market</span>
-                    </div>
-                    <a class="cta-link" href="https://www.oldsouthcarriage.com" target="_blank" rel="noopener">Book Old South Carriage →</a>
-                </div>
-            </div>
-
-            <!-- 9. Spa Day -->
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">9</div>
-                        <h3>Spa Day – The Dewberry, Charleston Place, or Woodhouse Day Spa</h3>
-                    </div>
-                    <p>
-                        Charleston's spa scene punches well above its weight for a city this size. <a href="https://thedewberry.com/spa" target="_blank" rel="noopener">The Spa at The Dewberry</a> on <strong>Meeting Street adjacent to Marion Square</strong> is the most buzzed-about — a mid-century modern sanctuary with treatments inspired by Lowcountry botanicals like sweetgrass and sea salt. For a larger group buyout, <strong>The Spa at Charleston Place</strong> on <strong>Market Street</strong> has full-day packages that can accommodate multiple guests simultaneously. <strong>Woodhouse Day Spa</strong> on <strong>King Street</strong> is a franchise with a strong local reputation for consistency and booking availability. Any of these make an ideal morning-of-the-wedding-eve wind-down for the bride and her crew.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">Marion Square</span>
-                        <span class="tag">Meeting Street</span>
-                        <span class="tag">Luxury Spa</span>
-                        <span class="tag">Lowcountry Botanicals</span>
-                    </div>
-                    <a class="cta-link" href="https://thedewberry.com/spa" target="_blank" rel="noopener">Explore The Dewberry Spa →</a>
-                </div>
-            </div>
-
-            <!-- CTA box for Michael -->
-            <div class="cta-box">
-                <h2>Need a Private Entertainer for Your Charleston Bach?</h2>
-                <p>Michael At Your Place brings the show directly to your rental — Isle of Palms, Folly Beach, downtown Charleston, and beyond.</p>
-                <a href="https://michaelatyourplace.com" target="_blank" rel="noopener">Book Now at MichaelAtYourPlace.com</a>
-            </div>
-
-            <!-- FOOD / DRINK -->
-            <div class="section-label"><span>🍽️ Food & Drink Experiences</span></div>
-
-            <!-- 10. Private Chef -->
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">10</div>
-                        <h3>Private Chef Lowcountry Dinner at Your Rental</h3>
-                    </div>
-                    <p>
-                        Hiring a private chef to bring the <strong>Lowcountry boil, shrimp and grits, and cornbread</strong> directly to your Isle of Palms or Folly Beach rental is one of the fastest-growing post bridal rehearsal trends in the Charleston area. Services like <a href="https://www.cozymeal.com/charleston/cooking-classes" target="_blank" rel="noopener">Cozymeal Charleston private chefs</a> match groups with local culinary talent who source from <strong>Half-Mile Farm, Ambrose Family Farm</strong>, and the <strong>Marion Square Farmers Market</strong>. This creates an intimate space for champagne toasts, party games, and real conversation that a loud restaurant simply can't offer — especially for groups of 8–15 staying in a <strong>Wild Dunes villa or downtown vacation home on Tradd Street or Broad Street</strong>.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">Private Chef</span>
-                        <span class="tag">Lowcountry Cuisine</span>
-                        <span class="tag">Marion Square</span>
-                        <span class="tag">In-Rental Dining</span>
-                    </div>
-                    <a class="cta-link" href="brunch-midday-charleston.html">See Brunch Options →</a>
-                </div>
-            </div>
-
-            <!-- 11. Culinary Walking Tour -->
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">11</div>
-                        <h3>Culinary Food Tour of the French Quarter & Market Area</h3>
-                    </div>
-                    <p>
-                        Charleston's restaurant scene regularly ranks among the best in America — fueled by a <strong>James Beard Award-winning and nominated concentration</strong> unmatched by cities ten times its size. A guided food tour through the <strong>French Quarter</strong>, around <strong>Church Street</strong> past historic St. Philip's and St. Michael's churches, and through the <strong>City Market on Market Street</strong> hits classics like <strong>FIG</strong> (James Beard winner Sean Brock territory), <strong>Husk</strong> on Queen Street, <strong>Slightly North of Broad (SNOB)</strong> on East Bay, and <strong>Poogan's Porch</strong> in a Victorian townhouse on <strong>Queen Street</strong>. Tours through <a href="https://www.culinarytoursofcharleston.com" target="_blank" rel="noopener">Culinary Tours of Charleston</a> run 2.5 hours with 6–7 tastings — pack comfortable shoes.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">French Quarter</span>
-                        <span class="tag">City Market</span>
-                        <span class="tag">Queen Street</span>
-                        <span class="tag">James Beard Scene</span>
-                    </div>
-                    <a class="cta-link" href="https://www.culinarytoursofcharleston.com" target="_blank" rel="noopener">Book a Culinary Tour →</a>
-                </div>
-            </div>
-
-            <!-- 12. Cocktail Class -->
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">12</div>
-                        <h3>Private Cocktail Making Class with Charleston Cocktail Co.</h3>
-                    </div>
-                    <p>
-                        <a href="https://charlestoncocktailco.com" target="_blank" rel="noopener">Charleston Cocktail Co.</a> sends a professional bartender directly to your vacation rental with everything needed to guide your group through a 90-minute cocktail class customized to the bride's favorite flavors. Groups can add a <strong>cocktail competition component</strong> — teams split up, mix their best creation, and the bride judges. It's the interactive, in-home alternative to bar-hopping that works especially well for post bridal rehearsal groups staying near <strong>Cannon Street, Spring Street, or the Cannonborough-Elliotborough neighborhood</strong>. Sipping a well-made Lowcountry Mule in your own rental beats fighting for the bartender's attention at a packed King Street bar.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">Cannonborough</span>
-                        <span class="tag">In-Home Class</span>
-                        <span class="tag">Cocktail Competition</span>
-                        <span class="tag">Private Bartender</span>
-                    </div>
-                    <a class="cta-link" href="https://charlestoncocktailco.com" target="_blank" rel="noopener">Book Charleston Cocktail Co. →</a>
-                </div>
-            </div>
-
-            <!-- WATER ACTIVITIES -->
-            <div class="section-label"><span>⛵ On-The-Water Activities</span></div>
-
-            <!-- 13. Pedal Bar / Boat -->
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">13</div>
-                        <h3>Harbor Pedal Bar or Booze Cruise on the Charleston Harbor</h3>
-                    </div>
-                    <p>
-                        <a href="https://harborbarchs.com" target="_blank" rel="noopener">Harbor Bar Pedal Tours</a> departs from <strong>Adger's Wharf near the foot of Tradd Street</strong> along the <strong>Charleston Harbor</strong> waterfront, offering 360-degree views of <strong>Fort Sumter</strong>, the <strong>Arthur Ravenel Jr. Bridge</strong>, and the <strong>Ravenel Bridge pedestrian path</strong> across the Cooper River. The pedal boat fits 12 and is entirely BYOB — the resistance is adjustable so you can coast. For a larger group wanting a full party boat experience, the <strong>Charleston Tiki Hut</strong> — a 32-passenger solar-powered party boat — runs out of <strong>Ripley Light Marina on Lockwood Drive</strong> and delivers two hours of floating fun with a cooler, Bluetooth speakers, and floating platforms.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">Charleston Harbor</span>
-                        <span class="tag">Adger's Wharf</span>
-                        <span class="tag">Fort Sumter Views</span>
-                        <span class="tag">Pedal Bar</span>
-                        <span class="tag">Party Boat</span>
-                    </div>
-                    <a class="cta-link" href="https://harborbarchs.com" target="_blank" rel="noopener">Book Harbor Bar Pedal Tours →</a>
-                </div>
-            </div>
-
-            <!-- 14. Water Sports -->
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">14</div>
-                        <h3>Kayaking, Paddleboarding & Water Sports near Isle of Palms</h3>
-                    </div>
-                    <p>
-                        For the active bride tribe, the <strong>Intracoastal Waterway</strong> and the tidal creeks behind <strong>Isle of Palms</strong> and <strong>Kiawah Island</strong> offer some of the most scenic paddling in the Lowcountry. <a href="https://tidalwavewatersports.com" target="_blank" rel="noopener">Tidal Wave Water Sports</a> at Isle of Palms is a beloved local small business offering kayak and paddleboard rentals, parasailing, and Jet Ski tours from the IOP Marina on <strong>Palm Boulevard</strong>. They also run custom harbor charters for groups wanting a more relaxed boat trip without the party-boat energy. For a wellness angle, <strong>Serenity Tree Yoga</strong> offers private beach and park yoga sessions — a perfect detox-morning activity the day after a big night out.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">Isle of Palms Marina</span>
-                        <span class="tag">Intracoastal Waterway</span>
-                        <span class="tag">Paddleboarding</span>
-                    </div>
-                    <a class="cta-link" href="https://tidalwavewatersports.com" target="_blank" rel="noopener">Book Tidal Wave Water Sports →</a>
-                </div>
-            </div>
-
-            <!-- UNIQUE / BOUTIQUE -->
-            <div class="section-label"><span>💫 Unique & Boutique Picks</span></div>
-
-            <!-- 15. Scavenger Hunt -->
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">15</div>
-                        <h3>Charleston Historic or Ghost Scavenger Hunt</h3>
-                    </div>
-                    <p>
-                        Turn the city itself into your activity with a custom or guided scavenger hunt through downtown Charleston. Historic hunts wind through <strong>Church Street</strong>, the <strong>Heyward-Washington House on Church Street</strong>, the <strong>Old Exchange Building on East Bay</strong>, and the <strong>Provost Dungeon beneath it</strong>. Ghost-themed hunts focus on the <strong>Unitarian Church Graveyard on Archdale Street</strong>, <strong>St. Philip's Churchyard on Church Street</strong>, and documented paranormal sites in the <strong>Ansonborough neighborhood</strong>. Sites like <a href="https://www.urbanadventurequest.com/charleston" target="_blank" rel="noopener">Urban Adventure Quest</a> offer self-guided app-based versions for groups that want to go at their own pace — great for post bridal rehearsal groups staying in the <strong>South of Broad</strong> or <strong>Radcliffeborough neighborhoods</strong>.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">Ansonborough</span>
-                        <span class="tag">Church Street</span>
-                        <span class="tag">South of Broad</span>
-                        <span class="tag">Self-Guided</span>
-                    </div>
-                    <a class="cta-link" href="https://www.urbanadventurequest.com/charleston" target="_blank" rel="noopener">Start a Scavenger Hunt →</a>
-                </div>
-            </div>
-
-            <!-- 16. City Market Sweetgrass & Shopping -->
-            <div class="card activity-card">
-                <div class="card-body-inner">
-                    <div class="activity-header">
-                        <div class="activity-number">16</div>
-                        <h3>Charleston City Market Sweetgrass Baskets & Local Art</h3>
-                    </div>
-                    <p>
-                        The <strong>Charleston City Market on Market Street</strong> stretching from Meeting to East Bay has been a community gathering point since 1804. Today it houses dozens of local artisans, with the most famous being the <strong>sweetgrass basket weavers</strong> — Gullah Geechee women who practice a West African tradition brought to the Lowcountry over 300 years ago. Watching a sweetgrass basket take shape is genuinely mesmerizing, and purchasing one supports a living cultural heritage. The market also sells <strong>Lowcountry palmetto rose vendors</strong>, sea glass jewelry, and food items from Charleston's artisan food scene. Pair the market visit with a walk down <strong>South Market Street</strong> into the <strong>Harleston Village</strong> for a quieter stretch of boutiques.
-                    </p>
-                    <div class="tag-row">
-                        <span class="tag">City Market</span>
-                        <span class="tag">Sweetgrass Baskets</span>
-                        <span class="tag">Gullah Geechee Culture</span>
-                        <span class="tag">Harleston Village</span>
-                    </div>
-                    <a class="cta-link" href="https://www.thecharlestoncitymarket.com" target="_blank" rel="noopener">Explore the City Market →</a>
                 </div>
             </div>
 
@@ -668,26 +424,21 @@
                     <a class="related-link" href="about.html">💁 About This Guide</a>
                 </div>
             </div>
-
-            <!-- Quick Tips Box -->
-            <div class="intro-section mt-4">
-                <p><strong>Planning Tips for Your Charleston Last Fling:</strong> Best weather runs <strong>March–May and September–November</strong> — spring means cooler temps and blooming gardens; fall means festivals and fewer tourists. Most downtown Charleston Airbnbs and vacation rentals are within walking distance of <strong>Upper King Street, the French Quarter, and the Charleston City Market</strong>. For beach stays, <strong>Isle of Palms rentals near Palm Boulevard</strong> work well for larger groups of 10–15. Rideshare (Uber/Lyft) from IOP to downtown runs about 25 minutes. <a href="https://www.partycharleston.com/bach-party/bachelorette-brunch-show-charleston-sc.html" target="_blank" rel="noopener">See our live brunch show recommendation</a> for a unique daytime option, or check <a href="https://www.partycharleston.com" target="_blank" rel="noopener">Party Charleston</a> for additional local event resources.</p>
-            </div>
-
         </div>
     </div>
+<!-- CTA box for Michael -->
+        <div class="related-pages">
+            <h2>Need a Private Entertainer for Your Charleston Bach?</h2>
+            <p>Michael At Your Place brings the show directly to your rental — Isle of Palms, Folly Beach, downtown Charleston, and beyond.</p>
+            <a href="https://michaelatyourplace.com" target="_blank" rel="noopener">Book Now at MichaelAtYourPlace.com</a>
+        </div>
 </div>
+
+
 
 <!-- Footer -->
 <footer class="site-footer">
     <div class="container">
-        <p>
-            Planning your last fling before the ring in Charleston SC? Browse all our guides:
-            <a href="charleston-bachelorette-party.html">Bachelorettes</a> ·
-            <a href="birthday-party-ideas.html">Birthday Ideas</a> ·
-            <a href="brunch-midday-charleston.html">Brunch Options</a> ·
-            <a href="about.html">About</a>
-        </p>
         <p>
             More Charleston resources: <a href="https://www.partycharleston.com" target="_blank" rel="noopener">Party Charleston</a> ·
             <a href="https://www.partycharleston.com/bach-party/bachelorette-brunch-show-charleston-sc.html" target="_blank" rel="noopener">Bachelorette Brunch Show</a> ·
